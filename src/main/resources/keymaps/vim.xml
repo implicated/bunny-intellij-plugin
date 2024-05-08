@@ -106,4 +106,7 @@
     <action id="FileStructurePopup">
         <keyboard-shortcut first-keystroke="meta S"/>
     </action>
+
+    <!-- Plugins  -->
+    <action id="AceAction"/>
 </keymap>
