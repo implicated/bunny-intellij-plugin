@@ -17,7 +17,11 @@
     </ExternalSystemSettings>
     <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
     <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+    <EXTENSION ID="com.intellij.execution.ExternalSystemRunConfigurationJavaExtension">
+      <extension name="GrepConsole" selectedProfileId="1638711812945" />
+    </EXTENSION>
     <DebugAllEnabled>false</DebugAllEnabled>
+    <RunAsTest>false</RunAsTest>
     <method v="2">
       <option name="RunConfigurationTask" enabled="true" run_configuration_name="Remove Plugin" run_configuration_type="ShConfigurationType" />
     </method>

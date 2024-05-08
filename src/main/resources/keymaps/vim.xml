@@ -37,18 +37,21 @@
 
 
     <!--System-->
-    <action id="PreviousWindow">
-        <keyboard-shortcut first-keystroke="meta j"/>
-    </action>
     <action id="NextWindow">
-        <keyboard-shortcut first-keystroke="meta k"/>
+        <keyboard-shortcut first-keystroke="meta escape" />
     </action>
-    <action id="PreviousTab">
-        <keyboard-shortcut first-keystroke="shift j"/>
-    </action>
-    <action id="NextTab">
-        <keyboard-shortcut first-keystroke="shift k"/>
-    </action>
+<!--    <action id="PreviousWindow">-->
+<!--        <keyboard-shortcut first-keystroke="meta j"/>-->
+<!--    </action>-->
+<!--    <action id="NextWindow">-->
+<!--        <keyboard-shortcut first-keystroke="meta k"/>-->
+<!--    </action>-->
+<!--    <action id="PreviousTab">-->
+<!--        <keyboard-shortcut first-keystroke="shift j"/>-->
+<!--    </action>-->
+<!--    <action id="NextTab">-->
+<!--        <keyboard-shortcut first-keystroke="shift k"/>-->
+<!--    </action>-->
     <action id="HideAllWindows">
         <keyboard-shortcut first-keystroke="shift meta space"/>
     </action>

@@ -81,7 +81,7 @@
             <option name="AsciiDoc" value="true"/>
         </context>
     </template>
-    <template name="image" value="image::$FILENAME$[]&#10;&#10;$END$" description="Image" toReformat="false"
+    <template name="image" value="image::$FILENAME$[width=222,height=100]&#10;&#10;$END$" description="Image" toReformat="false"
               toShortenFQNames="true">
         <variable name="FILENAME" expression="" defaultValue="&quot;filename.jpg&quot;" alwaysStopAt="true"/>
         <context>
@@ -152,7 +152,7 @@
             <option name="AsciiDoc" value="true"/>
         </context>
     </template>
-    <template name="siderbar" value="****&#10;$END$&#10;****" description="Sidebar" toReformat="false"
+    <template name="sidebar" value="****&#10;$END$&#10;****" description="Sidebar" toReformat="false"
               toShortenFQNames="true">
         <context>
             <option name="AsciiDoc" value="true"/>
