@@ -53,10 +53,10 @@
             <option name="AsciiDoc" value="true"/>
         </context>
     </template>
-    <template name="youtube" value=".$NAME$&#10;video::$YOUTUBE$[youtube,lang=zh-CN]&#10;&#10;$END$"
+    <template name="youtube" value="video::$WATCH$[youtube,800,450,list=$LIST$,lang=zh-CN]&#10;$END$"
               description="Youtube video" toReformat="false" toShortenFQNames="true">
-        <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true"/>
-        <variable name="YOUTUBE" expression="" defaultValue="&quot;nPER_vv2SyU&quot;" alwaysStopAt="true"/>
+        <variable name="WATCH" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="LIST" expression="" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="AsciiDoc" value="true"/>
         </context>
