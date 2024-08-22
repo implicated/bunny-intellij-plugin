@@ -43,9 +43,9 @@
 <!--    <action id="PreviousWindow">-->
 <!--        <keyboard-shortcut first-keystroke="meta j"/>-->
 <!--    </action>-->
-<!--    <action id="NextWindow">-->
-<!--        <keyboard-shortcut first-keystroke="meta k"/>-->
-<!--    </action>-->
+    <action id="NextWindow">
+        <keyboard-shortcut first-keystroke="meta j"/>
+    </action>
 <!--    <action id="PreviousTab">-->
 <!--        <keyboard-shortcut first-keystroke="shift j"/>-->
 <!--    </action>-->

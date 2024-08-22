@@ -1,4 +1,7 @@
-<scheme name="bunny-dark-native" version="142" parent_scheme="Darcula">
+<scheme name="bunny-dark-native" version="1" parent_scheme="Darcula">
+  <option name="LINE_SPACING" value="1.2" />
+  <option name="EDITOR_FONT_SIZE" value="13" />
+  <option name="EDITOR_FONT_NAME" value="JetBrains Mono" />
   <colors>
     <option name="CARET_COLOR" value="528bff" />
     <option name="CARET_ROW_COLOR" value="2c313c" />
