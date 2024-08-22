@@ -1,0 +1,11 @@
+<templateSet group="Bunny Kotlin">
+    <!--Kotlin-->
+    <template name="logi" value="log.info(&quot;log#$METHOD$ ==&gt; $PARAM$:{{}}&quot;, $END$);" description="log info"
+              toReformat="false" toShortenFQNames="true">
+        <variable name="METHOD" expression="methodName()" defaultValue="" alwaysStopAt="false"/>
+        <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="KOTLIN" value="true" />
+        </context>
+    </template>
+</templateSet>

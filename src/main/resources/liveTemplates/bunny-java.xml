@@ -1,6 +1,6 @@
 <templateSet group="Bunny Java">
     <!--Java-->
-    <template name="tt" value="@Test&#10;public void $method$() {&#10;    $END$&#10;}" description="test method"
+    <template name="test" value="@Test&#10;public void $method$() {&#10;    $END$&#10;}" description="test method"
               toReformat="false" toShortenFQNames="true">
         <variable name="method" expression="" defaultValue="one" alwaysStopAt="true"/>
         <context>

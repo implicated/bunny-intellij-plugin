@@ -1,0 +1,12 @@
+<keymap version="1" name="datagrip" parent="vim" disable-mnemonics="true">
+    <action id="ActivateProjectToolWindow"/>
+    <action id="ActivateDatabaseToolWindow"/>
+
+    <action id="ActivateFindToolWindow"/>
+    <action id="ActivateSQLGeneratorToolWindow">
+        <keyboard-shortcut first-keystroke="meta 3"/>
+    </action>
+    <action id="DatabaseView.SqlGenerator">
+        <keyboard-shortcut first-keystroke="meta s"/>
+    </action>
+</keymap>
