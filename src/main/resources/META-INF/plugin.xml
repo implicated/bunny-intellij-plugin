@@ -124,6 +124,7 @@
     </description>
 
     <extensions defaultExtensionNs="com.intellij">
+        <postStartupActivity implementation="bunny.ban.BanLiveTemplate"/>
         <bundledKeymap file="vim.xml"/>
         <bundledKeymap file="datagrip.xml"/>
         <defaultLiveTemplates file="/liveTemplates/bunny-asciidoc.xml"/>
@@ -131,6 +132,7 @@
         <defaultLiveTemplates file="/liveTemplates/bunny-java.xml"/>
         <defaultLiveTemplates file="/liveTemplates/bunny-kotlin.xml"/>
         <defaultLiveTemplates file="/liveTemplates/bunny-sql.xml"/>
+        <defaultLiveTemplates file="/liveTemplates/bunny-uml.xml"/>
         <themeProvider id="bunny-dark-native"
                        path="/theme/bunny-dark-native.theme.json"/>
     </extensions>

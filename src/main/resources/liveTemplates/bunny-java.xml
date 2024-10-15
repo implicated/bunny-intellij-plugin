@@ -30,24 +30,30 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="logi" value="log.info(&quot;log#$METHOD$ ==&gt; $PARAM$:{{}}&quot;, $END$);" description="log info"
-              toReformat="false" toShortenFQNames="true">
+    <template name="logi"
+              value="if (log.isInfoEnabled()) {&#10;    log.info(&quot;$PREFIX$$METHOD$ ==&gt; $PARAM$:{{}}&quot;, $END$);&#10;}"
+              description="log info" toReformat="false" toShortenFQNames="true">
+        <variable name="PREFIX" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true"/>
         <variable name="METHOD" expression="methodName()" defaultValue="" alwaysStopAt="false"/>
         <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="logd" value="log.debug(&quot;log#$METHOD$ ==&gt; $PARAM$:{{}}&quot;, $END$);" description="log info"
-              toReformat="false" toShortenFQNames="true">
+    <template name="logd"
+              value="if (log.isDebugEnabled()) {&#10;    log.debug(&quot;$PREFIX$$METHOD$ ==&gt; $PARAM$:{{}}&quot;, $END$);&#10;}"
+              description="log debug" toReformat="false" toShortenFQNames="true">
+        <variable name="PREFIX" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true"/>
         <variable name="METHOD" expression="methodName()" defaultValue="" alwaysStopAt="false"/>
         <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="loge" value="log.error(&quot;log#$METHOD$ ==&gt; $PARAM$:{{}}&quot;, $END$);" description="log info"
-              toReformat="false" toShortenFQNames="true">
+    <template name="loge"
+              value="if (log.isErrorEnabled()) {&#10;    log.error(&quot;$PREFIX$$METHOD$ ==&gt; $PARAM$:{{}}&quot;, $END$);&#10;}"
+              description="log error" toReformat="false" toShortenFQNames="true">
+        <variable name="PREFIX" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true"/>
         <variable name="METHOD" expression="methodName()" defaultValue="" alwaysStopAt="false"/>
         <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true"/>
         <context>

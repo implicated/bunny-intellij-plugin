@@ -145,8 +145,8 @@
             <option name="AsciiDoc" value="true"/>
         </context>
     </template>
-    <template name="uml" value="[plantuml]&#10;----&#10;$TEXT$&#10;----&#10;" description="plantuml" toReformat="false"
-              toShortenFQNames="false">
+    <template name="uml" value="[plantuml]&#10;----&#10;@startuml&#10;$TEXT$&#10;@enduml&#10;----&#10;"
+              description="plantuml" toReformat="false" toShortenFQNames="false">
         <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="AsciiDoc" value="true"/>
