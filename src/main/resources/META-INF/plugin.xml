@@ -145,5 +145,13 @@
                 icon="Icons.TERMINAL_ICON">
 <!--            <add-to-group group-id="RunContextPopupGroup" anchor="before" relative-to-action="OpenInBrowserGroup"/>-->
         </action>
+        <action id="MybatisLogTrans"
+                class="bunny.mybatis.MybatisLogTransAction"
+                text="mybatis日志解析"
+                description="mybatis日志解析"
+                icon="Icons.MYBATIS_ICON">
+            <add-to-group group-id="ConsoleEditorPopupMenu" anchor="first"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="alt A"/>
+        </action>
     </actions>
 </idea-plugin>

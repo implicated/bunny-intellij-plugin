@@ -11,4 +11,6 @@ public interface Icons {
 
     Icon TERMINAL_ICON = IconLoader.getIcon("/icons/terminal.png", Icons.class);
 
+    Icon MYBATIS_ICON = IconLoader.getIcon("/icons/mybatis.svg", Icons.class);
+
 }
