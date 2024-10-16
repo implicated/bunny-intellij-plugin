@@ -25,4 +25,10 @@
             <option name="PUML" value="true"/>
         </context>
     </template>
+    <template name="font" value="&lt;font color=$COLOR$&gt;$END$" description="Activity diagram. Font color" toReformat="false" toShortenFQNames="true">
+        <variable name="COLOR" expression="enum(&quot;red&quot;,&quot;green&quot;,&quot;blue&quot;)" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="PUML" value="true" />
+        </context>
+    </template>
 </templateSet>

@@ -55,8 +55,8 @@
     </template>
     <template name="youtube" value="video::$WATCH$[youtube,800,450,list=$LIST$,lang=zh-CN]&#10;$END$"
               description="Youtube video" toReformat="false" toShortenFQNames="true">
-        <variable name="WATCH" expression="" defaultValue="" alwaysStopAt="true" />
-        <variable name="LIST" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="WATCH" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="LIST" expression="" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="AsciiDoc" value="true"/>
         </context>
@@ -81,7 +81,8 @@
             <option name="AsciiDoc" value="true"/>
         </context>
     </template>
-    <template name="image" value="image::$FILENAME$[width=222,height=100]&#10;&#10;$END$" description="Image" toReformat="false"
+    <template name="image" value="image::$FILENAME$[width=222,height=100]&#10;&#10;$END$" description="Image"
+              toReformat="false"
               toShortenFQNames="true">
         <variable name="FILENAME" expression="" defaultValue="&quot;filename.jpg&quot;" alwaysStopAt="true"/>
         <context>
@@ -145,9 +146,10 @@
             <option name="AsciiDoc" value="true"/>
         </context>
     </template>
-    <template name="uml" value="[plantuml]&#10;----&#10;@startuml&#10;$TEXT$&#10;@enduml&#10;----&#10;"
+    <template name="uml"
+              value="[plantuml]&#10;----&#10;@startuml&#10;!theme toy&#10;title $TITLE$&#10;&#10;$END$&#10;@enduml&#10;----&#10;"
               description="plantuml" toReformat="false" toShortenFQNames="false">
-        <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="AsciiDoc" value="true"/>
         </context>
@@ -158,10 +160,11 @@
             <option name="AsciiDoc" value="true"/>
         </context>
     </template>
-    <template name="qaa" value="[qanda]&#10;$Q$?::&#10;$END$" description="question and answer" toReformat="false" toShortenFQNames="false">
-        <variable name="Q" expression="" defaultValue="" alwaysStopAt="true" />
+    <template name="qaa" value="[qanda]&#10;$Q$?::&#10;$END$" description="question and answer" toReformat="false"
+              toShortenFQNames="false">
+        <variable name="Q" expression="" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="AsciiDoc" value="true" />
+            <option name="AsciiDoc" value="true"/>
         </context>
     </template>
 </templateSet>

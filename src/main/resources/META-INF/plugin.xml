@@ -6,15 +6,15 @@
     <vendor>implicated</vendor>
 
     <depends>com.intellij.modules.lang</depends>
-    <depends>org.asciidoctor.intellij.asciidoc</depends>
-    <depends>IdeaVIM</depends>
-    <depends>AceJump</depends>
-    <depends>IdeaVimExtension</depends>
-    <depends>com.joshestein.ideavim-quickscope</depends>
-    <depends>org.jetbrains.IdeaVim-EasyMotion</depends>
-    <depends>String Manipulation</depends>
-    <depends>PlantUML integration</depends>
-    <depends>com.mallowigi</depends>
+<!--    <depends>org.asciidoctor.intellij.asciidoc</depends>-->
+<!--    <depends>IdeaVIM</depends>-->
+<!--    <depends>com.mallowigi</depends>-->
+<!--    <depends>PlantUML integration</depends>-->
+<!--    <depends>AceJump</depends>-->
+<!--    <depends>IdeaVimExtension</depends>-->
+<!--    <depends>com.joshestein.ideavim-quickscope</depends>-->
+<!--    <depends>org.jetbrains.IdeaVim-EasyMotion</depends>-->
+<!--    <depends>String Manipulation</depends>-->
 
     <description><![CDATA[
         <div>
