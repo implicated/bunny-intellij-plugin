@@ -1,0 +1,70 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin require-restart="true">
+    <id>cc.implicated.intellij.plugins.bunny</id>
+    <name>bunny</name>
+    <vendor>implicated</vendor>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>IdeaVIM</depends>
+    <depends>IdeaVimExtension</depends>
+    <depends>com.joshestein.ideavim-quickscope</depends>
+    <depends>org.jetbrains.IdeaVim-EasyMotion</depends>
+    <depends>AceJump</depends>
+    <depends>com.mallowigi</depends>
+    <depends>org.asciidoctor.intellij.asciidoc</depends>
+    <depends>PlantUML integration</depends>
+<!--    <depends>String Manipulation</depends>-->
+
+    <!--marketplace-->
+<!--    <depends optional="true" config-file="cc.implicated.intellij.plugins.bunny-proto.xml">-->
+<!--        io.kanro.idea.plugin.protobuf-->
+<!--    </depends>-->
+
+    <!--bundled-->
+    <depends optional="true" config-file="cc.implicated.intellij.plugins.bunny-kotlin.xml">
+        org.jetbrains.kotlin
+    </depends>
+    <depends optional="true" config-file="cc.implicated.intellij.plugins.bunny-database.xml">
+        com.intellij.database
+    </depends>
+    <depends optional="true" config-file="cc.implicated.intellij.plugins.bunny-properties.xml">
+        com.intellij.properties
+    </depends>
+    <depends optional="true" config-file="cc.implicated.intellij.plugins.bunny-proto.xml">
+        idea.plugin.protoeditor
+    </depends>
+
+    <applicationListeners>
+        <listener class="bunny.init.AppEvent" topic="com.intellij.ide.AppLifecycleListener"/>
+    </applicationListeners>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <postStartupActivity implementation="bunny.init.ProjectEvent"/>
+        <themeProvider id="bunny-dark-native" path="/theme/bunny-dark-native.theme.json"/>
+        <bundledKeymap file="vim.xml"/>
+        <bundledKeymap file="datagrip.xml"/>
+        <defaultLiveTemplates file="/liveTemplates/bunny-asciidoc.xml"/>
+        <defaultLiveTemplates file="/liveTemplates/bunny-idea.xml"/>
+        <defaultLiveTemplates file="/liveTemplates/bunny-java.xml"/>
+        <defaultLiveTemplates file="/liveTemplates/bunny-kotlin.xml"/>
+        <defaultLiveTemplates file="/liveTemplates/bunny-sql.xml"/>
+        <defaultLiveTemplates file="/liveTemplates/bunny-uml.xml"/>
+    </extensions>
+
+    <actions>
+        <action id="bunny.terminal.OpenTerminalAction"
+                class="bunny.plugins.terminal.OpenTerminalAction"
+                text="Open in External Terminal"
+                description="Open current file location in external terminal"
+                icon="Icons.terminal_icon">
+        </action>
+        <action id="MybatisLogTrans"
+                class="bunny.plugins.mybatis.MybatisLogTransAction"
+                text="mybatis日志解析"
+                description="mybatis日志解析"
+                icon="Icons.mybatis_icon">
+            <add-to-group group-id="ConsoleEditorPopupMenu" anchor="first"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="alt A"/>
+        </action>
+    </actions>
+</idea-plugin>

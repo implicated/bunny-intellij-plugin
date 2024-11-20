@@ -1,0 +1,170 @@
+<templateSet group="Bunny AsciiDoc">
+    <!--AsciiDoc-->
+    <template name="keyboard" value="kbd:[$VAR$]$END$" description="Keyboard" toReformat="false"
+              toShortenFQNames="true">
+        <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="AsciiDoc" value="true"/>
+        </context>
+    </template>
+    <template name="smart" value="$KEY$$SELECTION$$KEY$$END$" description="selection" toReformat="false"
+              toShortenFQNames="false">
+        <variable name="KEY" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="AsciiDoc" value="true"/>
+        </context>
+    </template>
+    <template name="sourcef" value="[source,$LANG$]&#10;.$FILENAME$&#10;----&#10;$SOURCE$&#10;----&#10;$END$"
+              description="Source code" toReformat="false" toShortenFQNames="true">
+        <variable name="LANG" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="FILENAME" expression="" defaultValue="&quot;filename&quot;" alwaysStopAt="true"/>
+        <variable name="SOURCE" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="AsciiDoc" value="true"/>
+        </context>
+    </template>
+    <template name="table2" value="|===&#10;| $cell1header$ | $cell2header$&#10;|==="
+              description="Table with two columns" toReformat="false" toShortenFQNames="true">
+        <variable name="cell1header" expression="" defaultValue="&quot;HeaderCell1&quot;" alwaysStopAt="true"/>
+        <variable name="cell2header" expression="" defaultValue="&quot;HeaderCell2&quot;" alwaysStopAt="true"/>
+        <context>
+            <option name="AsciiDoc" value="true"/>
+        </context>
+    </template>
+    <template name="source" value="[source,$LANG$,indent=0,options=nowrap]&#10;----&#10;$SOURCE$&#10;----&#10;$END$"
+              description="Source code" toReformat="false" toShortenFQNames="true">
+        <variable name="LANG" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="SOURCE" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="AsciiDoc" value="true"/>
+        </context>
+    </template>
+    <template name="include" value="include::$CONTEXT$[]$END$" description="Include" toReformat="false"
+              toShortenFQNames="true">
+        <variable name="CONTEXT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="AsciiDoc" value="true"/>
+        </context>
+    </template>
+    <template name="xref" value="xref:$CONTEXT$[]$END$" description="Cross Reference" toReformat="false"
+              toShortenFQNames="true">
+        <variable name="CONTEXT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="AsciiDoc" value="true"/>
+        </context>
+    </template>
+    <template name="youtube" value="video::$WATCH$[youtube,800,450,list=$LIST$,lang=zh-CN]&#10;$END$"
+              description="Youtube video" toReformat="false" toShortenFQNames="true">
+        <variable name="WATCH" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="LIST" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="AsciiDoc" value="true"/>
+        </context>
+    </template>
+    <template name="admonition-para" value="$TYPE$: $TEXT$&#10;" description="admonition paragraph" toReformat="false"
+              toShortenFQNames="false">
+        <variable name="TYPE"
+                  expression="enum(&quot;NOTE&quot;,&quot;TIP&quot;,&quot;IMPORTANT&quot;,&quot;CAUTION&quot;,&quot;WARNING&quot;)"
+                  defaultValue="" alwaysStopAt="true"/>
+        <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="AsciiDoc" value="true"/>
+        </context>
+    </template>
+    <template name="admonition-block" value="[$TYPE$]&#10;====&#10;$TEXT$&#10;====" description="admonition block"
+              toReformat="false" toShortenFQNames="false">
+        <variable name="TYPE"
+                  expression="enum(&quot;NOTE&quot;,&quot;TIP&quot;,&quot;IMPORTANT&quot;,&quot;CAUTION&quot;,&quot;WARNING&quot;)"
+                  defaultValue="NOTE" alwaysStopAt="true"/>
+        <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="AsciiDoc" value="true"/>
+        </context>
+    </template>
+    <template name="image" value="image::$FILENAME$[width=222,height=100]&#10;&#10;$END$" description="Image"
+              toReformat="false"
+              toShortenFQNames="true">
+        <variable name="FILENAME" expression="" defaultValue="&quot;filename.jpg&quot;" alwaysStopAt="true"/>
+        <context>
+            <option name="AsciiDoc" value="true"/>
+        </context>
+    </template>
+    <template name="dlist" value="xref:$CONTEXT$[]:: $END$&#10;" description="Description Lists" toReformat="false"
+              toShortenFQNames="true">
+        <variable name="CONTEXT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="AsciiDoc" value="true"/>
+        </context>
+    </template>
+    <template name="ifdef" value="ifdef::env-idea[]&#10;$SELECTION$&#10;endif::[]" description="admonition block"
+              toReformat="false" toShortenFQNames="false">
+        <context>
+            <option name="AsciiDoc" value="true"/>
+        </context>
+    </template>
+    <template name="tag-include" value="$cmt$ tag::$tagname$[]&#10;$SELECTION$&#10;$cmt$ end::$tagname$[]"
+              description="AsciiDoc Tags to be used with include macro" toReformat="true" toShortenFQNames="true">
+        <variable name="cmt" expression="lineCommentStart()" defaultValue="" alwaysStopAt="false"/>
+        <variable name="tagname" expression="" defaultValue="&quot;tagname&quot;" alwaysStopAt="true"/>
+        <context>
+            <option name="OTHER" value="true"/>
+        </context>
+    </template>
+    <template name="btn" value="btn:[$END$]" description="Button" toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="AsciiDoc" value="true"/>
+        </context>
+    </template>
+    <template name="menu" value="menu:$main$[$menu$]$END$" description="Menu Macro" toReformat="false"
+              toShortenFQNames="true">
+        <variable name="main" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="menu" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="AsciiDoc" value="true"/>
+        </context>
+    </template>
+    <template name="stem" value="stem:[$CONTEXT$]$END$&#10;&#10;"
+              description="Science, Technology, Engineering and Math expressions" toReformat="false"
+              toShortenFQNames="false">
+        <variable name="CONTEXT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="AsciiDoc" value="true"/>
+        </context>
+    </template>
+    <template name="coll" value="[%collapsible]&#10;====" description="collapsible block" toReformat="false"
+              toShortenFQNames="true">
+        <context>
+            <option name="AsciiDoc" value="true"/>
+        </context>
+    </template>
+    <template name="sourcec"
+              value="[%collapsible%open]&#10;====&#10;[source,$LANG$,indent=0]&#10;----&#10;$SOURCE$&#10;----&#10;$END$&#10;===="
+              description="Source code" toReformat="false" toShortenFQNames="true">
+        <variable name="LANG" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="SOURCE" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="AsciiDoc" value="true"/>
+        </context>
+    </template>
+    <template name="uml"
+              value="[plantuml]&#10;----&#10;@startuml&#10;!theme toy&#10;title $TITLE$&#10;&#10;$END$&#10;@enduml&#10;----&#10;"
+              description="plantuml" toReformat="false" toShortenFQNames="false">
+        <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="AsciiDoc" value="true"/>
+        </context>
+    </template>
+    <template name="sidebar" value="****&#10;$END$&#10;****" description="Sidebar" toReformat="false"
+              toShortenFQNames="true">
+        <context>
+            <option name="AsciiDoc" value="true"/>
+        </context>
+    </template>
+    <template name="qaa" value="[qanda]&#10;$Q$?::&#10;$END$" description="question and answer" toReformat="false"
+              toShortenFQNames="false">
+        <variable name="Q" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="AsciiDoc" value="true"/>
+        </context>
+    </template>
+</templateSet>

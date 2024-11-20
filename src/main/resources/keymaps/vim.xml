@@ -1,0 +1,116 @@
+<keymap version="1" name="vim" parent="Mac OS X 10.5+" disable-mnemonics="true">
+    <!--VCS-->
+    <action id="CheckinProject"/>
+    <action id="NextDiff">
+        <keyboard-shortcut first-keystroke="alt j"/>
+    </action>
+    <action id="Diff.NextChange">
+        <keyboard-shortcut first-keystroke="shift alt j"/>
+    </action>
+    <action id="PreviousDiff">
+        <keyboard-shortcut first-keystroke="alt k"/>
+    </action>
+    <action id="Diff.PrevChange">
+        <keyboard-shortcut first-keystroke="shift alt k"/>
+    </action>
+    <action id="Diff.ApplyNonConflicts">
+        <keyboard-shortcut first-keystroke="alt p"/>
+    </action>
+    <action id="Diff.ApplyLeftSide">
+        <keyboard-shortcut first-keystroke="alt h"/>
+    </action>
+    <action id="Diff.ApplyRightSide">
+        <keyboard-shortcut first-keystroke="alt l"/>
+    </action>
+    <action id="Diff.IgnoreLeftSide">
+        <keyboard-shortcut first-keystroke="shift alt h"/>
+    </action>
+    <action id="Diff.IgnoreRightSide">
+        <keyboard-shortcut first-keystroke="shift alt l"/>
+    </action>
+    <action id="Git.Branches">
+        <keyboard-shortcut first-keystroke="shift meta j"/>
+    </action>
+    <action id="Vcs.Push">
+        <keyboard-shortcut first-keystroke="shift meta k"/>
+    </action>
+
+
+    <!--System-->
+    <action id="NextProjectWindow">
+        <keyboard-shortcut first-keystroke="meta j"/>
+    </action>
+    <action id="PreviousProjectWindow">
+        <keyboard-shortcut first-keystroke="meta k"/>
+    </action>
+    <!--    <action id="NextWindow">-->
+    <!--        <keyboard-shortcut first-keystroke="meta j"/>-->
+    <!--        <keyboard-shortcut first-keystroke="meta escape"/>-->
+    <!--    </action>-->
+    <!--    <action id="PreviousWindow">-->
+    <!--        <keyboard-shortcut first-keystroke="meta j"/>-->
+    <!--    </action>-->
+    <!--    <action id="PreviousTab">-->
+    <!--        <keyboard-shortcut first-keystroke="shift j"/>-->
+    <!--    </action>-->
+    <!--    <action id="NextTab">-->
+    <!--        <keyboard-shortcut first-keystroke="shift k"/>-->
+    <!--    </action>-->
+    <action id="HideAllWindows">
+        <keyboard-shortcut first-keystroke="shift meta space"/>
+    </action>
+    <action id="GotoAction">
+        <keyboard-shortcut first-keystroke="shift meta p"/>
+    </action>
+    <action id="MinimizeCurrentWindow"/>
+    <action id="Editor LRU"/>
+    <action id="Run"/>
+    <action id="Debug"/>
+
+
+    <!--Tool Windows-->
+    <action id="ActivateProjectToolWindow">
+        <keyboard-shortcut first-keystroke="meta 1"/>
+    </action>
+    <action id="ActivateVersionControlToolWindow">
+        <keyboard-shortcut first-keystroke="meta 2"/>
+    </action>
+    <action id="ActivateMavenToolWindow">
+        <keyboard-shortcut first-keystroke="meta 4"/>
+    </action>
+    <action id="ActivateGradleToolWindow">
+        <keyboard-shortcut first-keystroke="meta 4"/>
+    </action>
+    <action id="ActivateWebInspectorToolWindow">
+        <keyboard-shortcut first-keystroke="meta 4"/>
+    </action>
+    <action id="ActivateTODOToolWindow">
+        <keyboard-shortcut first-keystroke="meta 9"/>
+    </action>
+    <action id="ActivateBookmarksToolWindow"/>
+    <action id="ActivateDatabaseToolWindow"/>
+    <action id="ActivateRunToolWindow"/>
+    <action id="ActivateDebugToolWindow"/>
+
+
+    <!--Editor-->
+    <action id="EditorBackSpace">
+        <keyboard-shortcut first-keystroke="control H"/>
+        <keyboard-shortcut first-keystroke="BACK_SPACE"/>
+    </action>
+    <action id="EditorDelete">
+        <keyboard-shortcut first-keystroke="control D"/>
+        <keyboard-shortcut first-keystroke="DELETE"/>
+    </action>
+    <action id="Generate"/>
+    <action id="InsertLiveTemplate"/>
+    <action id="SaveAll"/>
+
+    <!--Popup-->
+    <action id="FileStructurePopup">
+        <keyboard-shortcut first-keystroke="meta S"/>
+    </action>
+
+    <!-- Plugins  -->
+    <action id="AceAction"/>
+</keymap>

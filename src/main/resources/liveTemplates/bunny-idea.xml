@@ -1,0 +1,12 @@
+<templateSet group="Bunny IDEA">
+    <template name="noformat" value="// @formatter:off&#10;$SELECTION$&#10;// @formatter:on" description="" toReformat="true" toShortenFQNames="true">
+        <context>
+            <option name="OTHER" value="true" />
+        </context>
+    </template>
+    <template name="todo" value="// zy-todo " description="" toReformat="true" toShortenFQNames="true">
+        <context>
+            <option name="OTHER" value="true" />
+        </context>
+    </template>
+</templateSet>

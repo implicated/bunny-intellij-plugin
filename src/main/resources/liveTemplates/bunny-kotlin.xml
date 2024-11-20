@@ -1,0 +1,19 @@
+<templateSet group="Bunny Kotlin">
+    <!--Kotlin-->
+    <template name="logi" value="log.info(&quot;log#$METHOD$ ==&gt; $PARAM$:{{}}&quot;, $END$);" description="log info"
+              toReformat="false" toShortenFQNames="true">
+        <variable name="METHOD" expression="methodName()" defaultValue="" alwaysStopAt="false"/>
+        <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="KOTLIN" value="true" />
+        </context>
+    </template>
+    <template name="logp" value="thisLogger().info(&quot;zylog#$CLASS$ ==&gt; $PARAM$:{${$END$}}&quot;)&#10;"
+              description="plugins logger" toReformat="false" toShortenFQNames="true">
+        <variable name="CLASS" expression="kotlinClassName()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="KOTLIN" value="true"/>
+        </context>
+    </template>
+</templateSet>

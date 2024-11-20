@@ -1,0 +1,35 @@
+package bunny.init
+
+import bunny.style.*
+import bunny.template.LiveTemplateService
+import bunny.vsc.VcsService
+import com.intellij.ide.plugins.PluginManagerCore
+import com.intellij.openapi.components.service
+import com.intellij.openapi.project.Project
+import com.intellij.openapi.startup.ProjectActivity
+
+class ProjectEvent : ProjectActivity {
+
+    override suspend fun execute(project: Project) {
+
+        PluginManagerCore.loadedPlugins.forEach { plugin ->
+            // @formatter:off
+            when (plugin.pluginId.idString) {
+
+                // IC
+                KotlinCodeStyleService.PLUGIN_ID -> project.service<KotlinCodeStyleService>().commentStyle(project)
+                JavaCodeStyleService.PLUGIN_ID -> project.service<JavaCodeStyleService>().commentStyle(project)
+                PropertiesCodeStyleService.PLUGIN_ID -> project.service<PropertiesCodeStyleService>().customStyle(project)
+                ProtobufCodeStyleService.PLUGIN_ID -> project.service<ProtobufCodeStyleService>().commonStyle(project)
+
+                // IU
+                SqlCodeStyleService.PLUGIN_ID -> project.service<SqlCodeStyleService>().customStyle(project)
+
+                // marketplace
+            }
+            // @formatter:on
+        }
+
+        project.service<VcsService>().setCommitChecks(project)
+    }
+}
