@@ -21,24 +21,17 @@
 <!--    </depends>-->
 
     <!--bundled-->
-    <depends optional="true" config-file="cc.implicated.intellij.plugins.bunny-kotlin.xml">
-        org.jetbrains.kotlin
-    </depends>
-    <depends optional="true" config-file="cc.implicated.intellij.plugins.bunny-database.xml">
-        com.intellij.database
-    </depends>
-    <depends optional="true" config-file="cc.implicated.intellij.plugins.bunny-properties.xml">
-        com.intellij.properties
-    </depends>
-    <depends optional="true" config-file="cc.implicated.intellij.plugins.bunny-proto.xml">
-        idea.plugin.protoeditor
-    </depends>
+    <depends optional="true" config-file="bunny-kotlin.xml">org.jetbrains.kotlin</depends>
+    <depends optional="true" config-file="bunny-properties.xml">com.intellij.properties</depends>
+    <depends optional="true" config-file="bunny-database.xml">com.intellij.database</depends>
+    <depends optional="true" config-file="bunny-proto.xml">idea.plugin.protoeditor</depends>
 
     <applicationListeners>
         <listener class="bunny.init.AppEvent" topic="com.intellij.ide.AppLifecycleListener"/>
     </applicationListeners>
 
     <extensions defaultExtensionNs="com.intellij">
+        <iconProvider implementation="bunny.plugins.atom.AtomIconProvider"/>
         <postStartupActivity implementation="bunny.init.ProjectEvent"/>
         <themeProvider id="bunny-dark-native" path="/theme/bunny-dark-native.theme.json"/>
         <bundledKeymap file="vim.xml"/>

@@ -68,6 +68,7 @@ class PluginService {
             "com.intellij.java",
             "com.intellij.java.ide",
             "com.intellij.modules.json",
+
             "com.intellij.analysis.pwa",
             "com.intellij.analysis.pwa.java",
         ),
@@ -95,6 +96,15 @@ class PluginService {
             "com.intellij.css",
             "JavaScript",
             "com.intellij.modules.json",
+        ),
+        "GO" to mutableListOf(
+            // 必须且需要指定
+            "org.jetbrains.plugins.go",
+            "org.jetbrains.plugins.go.ide",
+            "com.intellij.modules.json",
+
+            // 自己追加
+            "org.jetbrains.plugins.go-template",
         )
     )
 }
