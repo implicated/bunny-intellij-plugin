@@ -5,33 +5,37 @@
     <vendor>implicated</vendor>
 
     <depends>com.intellij.modules.platform</depends>
-    <depends>IdeaVIM</depends>
-    <depends>IdeaVimExtension</depends>
-    <depends>com.joshestein.ideavim-quickscope</depends>
-    <depends>org.jetbrains.IdeaVim-EasyMotion</depends>
-    <depends>AceJump</depends>
-    <depends>com.mallowigi</depends>
-    <depends>org.asciidoctor.intellij.asciidoc</depends>
-    <depends>PlantUML integration</depends>
+<!--    <depends>IdeaVIM</depends>-->
+<!--    <depends>IdeaVimExtension</depends>-->
+<!--    <depends>com.joshestein.ideavim-quickscope</depends>-->
+<!--    <depends>org.jetbrains.IdeaVim-EasyMotion</depends>-->
+<!--    <depends>AceJump</depends>-->
+<!--    <depends>com.mallowigi</depends>-->
+<!--    <depends>org.asciidoctor.intellij.asciidoc</depends>-->
+<!--    <depends>PlantUML integration</depends>-->
 <!--    <depends>String Manipulation</depends>-->
 
     <!--marketplace-->
-<!--    <depends optional="true" config-file="cc.implicated.intellij.plugins.bunny-proto.xml">-->
-<!--        io.kanro.idea.plugin.protobuf-->
-<!--    </depends>-->
+<!--    <depends optional="true" config-file="bunny-proto.xml">io.kanro.idea.plugin.protobuf</depends>-->
 
     <!--bundled-->
     <depends optional="true" config-file="bunny-kotlin.xml">org.jetbrains.kotlin</depends>
     <depends optional="true" config-file="bunny-properties.xml">com.intellij.properties</depends>
-    <depends optional="true" config-file="bunny-database.xml">com.intellij.database</depends>
     <depends optional="true" config-file="bunny-proto.xml">idea.plugin.protoeditor</depends>
+    <depends optional="true" config-file="bunny-database.xml">com.intellij.database</depends>
 
     <applicationListeners>
         <listener class="bunny.init.AppEvent" topic="com.intellij.ide.AppLifecycleListener"/>
     </applicationListeners>
 
     <extensions defaultExtensionNs="com.intellij">
-        <iconProvider implementation="bunny.plugins.atom.AtomIconProvider"/>
+        <iconProvider implementation="bunny.plugins.atom.AtomIconProvider"
+                      order="first"
+                      id="AtomIconProvider"/>
+        <projectViewNodeDecorator implementation="bunny.plugins.atom.tree.DefaultFoldersDecorator"/>
+        <projectViewNodeDecorator implementation="bunny.plugins.atom.tree.DefaultFilesDecorator"/>
+<!--        <projectViewNodeDecorator implementation="bunny.plugins.atom.tree.HollowFoldersDecorator"/>-->
+
         <postStartupActivity implementation="bunny.init.ProjectEvent"/>
         <themeProvider id="bunny-dark-native" path="/theme/bunny-dark-native.theme.json"/>
         <bundledKeymap file="vim.xml"/>
