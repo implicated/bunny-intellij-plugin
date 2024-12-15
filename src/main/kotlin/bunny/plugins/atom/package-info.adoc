@@ -1,0 +1,10 @@
+.图标加载的完整流程
+. 图标路径处理：
+* 通过 xref:patcher/AtomIconPatcher.kt[IconPathPatcher] 修改路径。
+* 如果路径未补丁，使用默认路径。
+. 图标加载：
+* 如果是 `SVG` 图标，调用 xref:patcher/AtomIconSvgPatcher.kt[SvgElementColorPatcherProvider] 进行颜色调整。
+* 否则加载原始图标。
+. 图标提供：
+* 调用 xref:provider/AtomIconVcsProvider.kt[FilePathIconProvider]（如果是文件路径）。
+* 调用所有注册的 xref:provider/AtomIconProvider.kt[IconProvider] 提供动态图标。
