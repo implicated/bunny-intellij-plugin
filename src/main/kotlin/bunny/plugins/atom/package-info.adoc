@@ -1,3 +1,5 @@
+= Package Info
+
 .图标加载的完整流程
 . 图标路径处理：
 * 通过 xref:patcher/AtomIconPatcher.kt[IconPathPatcher] 修改路径。
@@ -8,3 +10,28 @@
 . 图标提供：
 * 调用 xref:provider/AtomIconVcsProvider.kt[FilePathIconProvider]（如果是文件路径）。
 * 调用所有注册的 xref:provider/AtomIconProvider.kt[IconProvider] 提供动态图标。
+
+
+.Alfred Workflow
+[source,bash,indent=0,options=nowrap]
+----
+origin="/Users/z3/Bunny/intellij-plugins/bunny-intellij-plugin/src/main/resources/icons/atom/folders"
+
+echo '{"items": ['
+
+find "$origin" -type f -iname "*$1*" | while IFS= read -r path; do
+  title=${path#$origin}
+
+  /bin/cat <<EOF
+  {
+    "icon": {
+      "path": "$path"
+    },
+    "uid": "$path",
+    "title": "$title"
+  },
+EOF
+done
+
+echo ']}'
+----

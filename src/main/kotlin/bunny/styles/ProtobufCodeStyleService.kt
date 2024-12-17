@@ -1,4 +1,4 @@
-package bunny.style
+package bunny.styles
 
 import com.intellij.application.options.CodeStyle
 import com.intellij.openapi.components.Service

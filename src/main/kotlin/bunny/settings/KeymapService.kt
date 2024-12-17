@@ -1,8 +1,7 @@
-package bunny.theme
+package bunny.settings
 
 import com.intellij.openapi.application.ApplicationInfo
 import com.intellij.openapi.components.Service
-import com.intellij.openapi.diagnostic.thisLogger
 import com.intellij.openapi.keymap.KeymapManager
 import com.intellij.openapi.keymap.impl.KeymapManagerImpl
 

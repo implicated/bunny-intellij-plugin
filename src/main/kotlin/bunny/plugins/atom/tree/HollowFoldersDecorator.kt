@@ -1,88 +1,85 @@
 package bunny.plugins.atom.tree
 
+import cache.AppCache
 import com.intellij.ide.projectView.PresentationData
 import com.intellij.ide.projectView.ProjectViewNode
 import com.intellij.ide.projectView.ProjectViewNodeDecorator
 import com.intellij.ide.projectView.impl.ProjectRootsUtil
-import com.intellij.openapi.diagnostic.thisLogger
 import com.intellij.openapi.fileEditor.FileEditorManager
+import com.intellij.openapi.project.DumbAware
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.roots.ProjectRootManager
 import com.intellij.openapi.vfs.VirtualFile
+import com.intellij.openapi.vfs.isFile
 import com.intellij.util.PlatformIcons
-import icons.AtomIcons
-import java.util.*
+import icons.Icons
 import javax.swing.Icon
 
-/**
- * Hollow folders' decorator: Decorate directories as "open" when one of
- * its files is open.
- */
-class HollowFoldersDecorator : ProjectViewNodeDecorator {
-    /** Decorate nodes with icon associations. */
-    override fun decorate(node: ProjectViewNode<*>, data: PresentationData) {
-        val file = node.virtualFile
-        val project = node.project
+class HollowFoldersDecorator : ProjectViewNodeDecorator, DumbAware {
 
-        if (project != null && file != null && !project.isDisposed) {
+    private val excluded: Icon = Icons.getIcon("/icons/atom/patch/icons/mt/modules/ExcludedTreeOpen.svg")
+    private val module: Icon = Icons.getIcon("/icons/atom/patch/icons/mt/modules/ModuleOpen.svg")
+    private val source: Icon = Icons.getIcon("/icons/atom/patch/icons/mt/modules/sourceRootOpen.svg")
+    private val test: Icon = Icons.getIcon("/icons/atom/patch/icons/mt/modules/testRootOpen.svg")
+    private val folderOpen: Icon = Icons.getIcon("/icons/atom/patch/icons/nodes/folderOpen.svg")
+
+    /**
+     * @see com.intellij.ide.projectView.impl.CompoundProjectViewNodeDecorator.decorate
+     */
+    override fun decorate(node: ProjectViewNode<*>, data: PresentationData) {
+        val project = node.project ?: return
+        if (project.isDisposed) return
+        val virtualFile = node.virtualFile ?: return
+
+        val icon = when {
+            virtualFile.isFile -> matchFiles(virtualFile)
+            else -> matchFolder(virtualFile, data, project)
+        } ?: return
+        data.setIcon(Icons.getLayeredIcon(icon, virtualFile))
+    }
+
+    private fun matchFiles(virtualFile: VirtualFile): Icon? {
+        return Icons.files
+            .filter { it.match(virtualFile) }
+            .maxByOrNull { it.priority }
+            ?.let {
+                AppCache.instance.iconCache.getOrPut(it.icon) {
+                    Icons.getIcon(it.icon)
+                }
+            }
+    }
+
+    private fun matchFolder(virtualFile: VirtualFile, data: PresentationData, project: Project): Icon? {
+        val openFiles = FileEditorManager.getInstance(project).openFiles
+        val isOpen = openFiles.any { vf -> vf.path.contains(virtualFile.path) }
+        return if (!isOpen) {
+            Icons.folders
+                .filter { it.match(virtualFile) }
+                .maxByOrNull { it.priority }
+                ?.let {
+                    AppCache.instance.iconCache.getOrPut(it.icon) {
+                        Icons.getIcon(it.icon)
+                    }
+                }
+        } else {
             when {
-                !file.isDirectory -> return
-                isFolderContainingOpenFiles(project, file) -> setOpenDirectoryIcon(data, file, project)
+                data.getIcon(true) == PlatformIcons.PACKAGE_ICON -> PlatformIcons.PACKAGE_ICON
+                ProjectRootManager.getInstance(project).fileIndex.isExcluded(virtualFile) -> excluded
+                ProjectRootsUtil.isModuleContentRoot(virtualFile, project) -> module
+                ProjectRootsUtil.isInSource(virtualFile, project) -> source
+                ProjectRootsUtil.isInTestSource(virtualFile, project) -> test
+                else -> {
+                    Icons.foldersOpen
+                        .filter { it.match(virtualFile) }
+                        .maxByOrNull { it.priority }
+                        ?.let {
+                            AppCache.instance.iconCache.getOrPut(it.icon) {
+                                Icons.getIcon(it.icon)
+                            }
+                        }
+                        ?: folderOpen
+                }
             }
         }
     }
-
-    private fun isFolderContainingOpenFiles(project: Project, virtualFile: VirtualFile): Boolean {
-        val openFiles = FileEditorManager.getInstance(project).openFiles
-        return openFiles.any { vf: VirtualFile -> vf.path.contains(virtualFile.path) }
-    }
-
-    /**
-     * Set open directory icon according to the directory type
-     *
-     * @param data Presentation Data
-     * @param file data about the directory
-     * @param project current project
-     */
-    private fun setOpenDirectoryIcon(data: PresentationData, file: VirtualFile, project: Project) {
-        // try {
-        //     val matchedAssociation = matchAssociation(file)
-        //     val icon = when {
-        //         data.getIcon(/* open = */ true) is DirIcon -> {
-        //             val openedIcon: Icon = (Objects.requireNonNull(data.getIcon(true)) as DirIcon).openedIcon
-        //             DirIcon(openedIcon)
-        //         }
-        //
-        //         matchedAssociation != null -> matchedAssociation
-        //
-        //         ProjectRootManager.getInstance(project).fileIndex.isExcluded(file) -> AtomIcons.EXCLUDED
-        //         ProjectRootsUtil.isModuleContentRoot(file, project) -> AtomIcons.MODULE
-        //         ProjectRootsUtil.isInSource(file, project) -> AtomIcons.SOURCE
-        //         ProjectRootsUtil.isInTestSource(file, project) -> AtomIcons.TEST
-        //         data.getIcon(/* open = */ false) == PlatformIcons.PACKAGE_ICON -> PlatformIcons.PACKAGE_ICON
-        //         else -> directoryIcon
-        //     }
-        //
-        //     val layeredIcon = AtomIcons.getLayeredIcon(icon, file)
-        //     data.setIcon(layeredIcon)
-        // } catch (e: Exception) {
-        //     thisLogger().warn(e.message)
-        // }
-    }
-
-    private fun matchAssociation(virtualFile: VirtualFile): Icon? {
-        val regex = AtomIcons.foldersOpen
-            .filter { it.match(virtualFile) }
-            .maxByOrNull { it.priority }
-        return regex?.let {
-            AtomIcons.getLayeredIcon(AtomIcons.getIcon(it.icon), virtualFile)
-        }
-    }
-
-    // companion object {
-    //     /** Default directory icon. */
-    //     val directoryIcon: Icon
-    //         get() = AtomIcons.Nodes2.FolderOpen
-    // }
-
 }

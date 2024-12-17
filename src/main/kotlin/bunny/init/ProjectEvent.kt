@@ -1,6 +1,6 @@
 package bunny.init
 
-import bunny.style.*
+import bunny.styles.*
 import bunny.vcs.VcsService
 import com.intellij.ide.plugins.PluginManagerCore
 import com.intellij.openapi.components.service

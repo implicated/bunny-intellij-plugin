@@ -1,4 +1,4 @@
-package bunny.theme
+package bunny.settings
 
 import com.intellij.ide.GeneralSettings
 import com.intellij.openapi.components.Service

@@ -21,6 +21,7 @@ class MybatisLogTransAction : AnAction() {
             return
         }
 
+        // 需要同时包含 SQL 和 param
         val strNum = ConvertUtils.strNum(selectedText, SQL_START_STR) + ConvertUtils.strNum(
             selectedText,
             PARAMS_START_STR

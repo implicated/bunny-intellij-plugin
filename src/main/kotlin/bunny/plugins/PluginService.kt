@@ -21,7 +21,7 @@ class PluginService {
         val productCode = ApplicationInfo.getInstance().build.productCode
         PluginManagerCore.loadedPlugins.mapNotNull { plugin ->
             val pluginId = plugin.pluginId.idString
-            thisLogger().info("zylog#PluginService ==> plugin:{$pluginId}")
+            thisLogger().info("zylog#loaded ==> ${productCode}:$pluginId")
 
             if (checkEssential(productCode, pluginId)) {
                 null
@@ -30,6 +30,9 @@ class PluginService {
             }
         }.let {
             val pluginService = PluginEnabler.getInstance()
+            it.forEach { pluginId ->
+                thisLogger().info("zylog#disable ==> ${productCode}:${pluginId.idString}")
+            }
             pluginService.disableById(it.toSet())
         }
     }

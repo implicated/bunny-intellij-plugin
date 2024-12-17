@@ -1,4 +1,4 @@
-package bunny.theme
+package bunny.themes
 
 import com.intellij.ide.ui.UIDensity
 import com.intellij.ide.ui.UISettings

@@ -1,4 +1,4 @@
-package bunny.template
+package bunny.templates
 
 import com.intellij.codeInsight.template.impl.TemplateSettings
 import com.intellij.openapi.components.Service

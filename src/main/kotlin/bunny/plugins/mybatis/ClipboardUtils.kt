@@ -1,5 +1,6 @@
 package bunny.plugins.mybatis
 
+import com.intellij.openapi.diagnostic.thisLogger
 import java.awt.Toolkit
 import java.awt.datatransfer.DataFlavor
 import java.awt.datatransfer.StringSelection
@@ -19,7 +20,7 @@ object ClipboardUtils {
                         // 获取剪贴板中的文本内容
                         return trans.getTransferData(DataFlavor.stringFlavor) as String
                     } catch (e: Exception) {
-                        e.printStackTrace()
+                        thisLogger().info("zylog#ClipboardUtils ==> :{${e.message}}", e)
                     }
                 }
             }

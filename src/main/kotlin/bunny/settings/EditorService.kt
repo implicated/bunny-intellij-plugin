@@ -1,4 +1,4 @@
-package bunny.theme
+package bunny.settings
 
 import com.intellij.codeInsight.CodeInsightSettings
 import com.intellij.codeInsight.daemon.DaemonCodeAnalyzerSettings
