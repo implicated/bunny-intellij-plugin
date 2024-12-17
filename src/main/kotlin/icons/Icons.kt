@@ -20,7 +20,7 @@ import javax.swing.SwingConstants
  */
 object Icons {
     @JvmField
-    val terminal_icon = getIcon("/icons/terminal.png")
+    val terminal_icon = getIcon("/icons/terminal.svg")
 
     @JvmField
     val mybatis_icon = getIcon("/icons/mybatis.svg")

@@ -16,8 +16,7 @@ Bunny provides one-click installation of some of the most commonly used plugins 
 
 ---
 
-- [ ] Bundle Common Plugins
-    - [Atom Material Icons](https://plugins.jetbrains.com/plugin/10044-atom-material-icons)
+- [x] Bundle Common Plugins
     - [IdeaVim](https://plugins.jetbrains.com/plugin/164-ideavim)
     - [AceJump](https://plugins.jetbrains.com/plugin/7086-acejump)
     - [IdeaVimExtension](https://plugins.jetbrains.com/plugin/9615-ideavimextension)
@@ -27,22 +26,31 @@ Bunny provides one-click installation of some of the most commonly used plugins 
     - [PlantUML Integration](https://plugins.jetbrains.com/plugin/7017-plantuml-integration)
     - [String Manipulation](https://plugins.jetbrains.com/plugin/2162-string-manipulation)
     - [Rainbow Brackets](https://plugins.jetbrains.com/plugin/10080-rainbow-brackets)
+- [x] Disable Useless Plugins
 - [x] Integration Plugins
     - [x] [One Dark Native](https://plugins.jetbrains.com/plugin/12131-one-dark-native])
     - [x] [Native Terminal](https://plugins.jetbrains.com/plugin/9966-native-terminal)
+    - [x] Mybatis Log
+    - [x] [Atom Material Icons](https://plugins.jetbrains.com/plugin/10044-atom-material-icons)
 - [x] Integration Customize Keymaps
     - [x] [IntelliJ Mac OS X 10.5+](https://github.com/JetBrains/intellij-community/blob/master/platform/platform-resources/src/keymaps/Mac%20OS%20X%2010.5%2B.xml)
 - [x] Integration Live Template
 - [x] Integration Code Style
+  - [x] Customer Java Style
+  - [x] Customer Kotlin Style
+  - [x] Customer Properties Style
+  - [x] Customer Protobuf Style
 - [x] Integration Settings
   - [x] Appearance
   - [x] Editor General
+  - [x] Advanced Setting
 
 ### TODO
 
+- [ ] Customer SQL Style
+- [ ] Code Highlight for Multi-Language
 - [ ] Integration Postfix Completion
 - [ ] Integration Code Completion
-- [ ] Integration Advanced Setting
 
 <!-- Plugin description end -->
 
