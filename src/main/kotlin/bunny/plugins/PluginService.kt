@@ -44,7 +44,16 @@ class PluginService {
                 listOf(
                     "cc.implicated.intellij.plugins.bunny",
                     "Git4Idea",
+                    // Local AI/ML Tool
+                    "com.intellij.completion.ml.ranking",
+                    "com.intellij.marketplace.ml",
+                    "com.intellij.ml.inline.completion",
+                    "com.intellij.searcheverywhere.ml",
+                    "org.jetbrains.completion.full.line",
+                    // other
+                    "org.intellij.intelliLang",
                     "org.jetbrains.plugins.terminal",
+                    "org.jetbrains.plugins.textmate",
                 )
             )
             .contains(plugin)
@@ -57,14 +66,16 @@ class PluginService {
         "DB" to mutableListOf(
             // 必须且需要指定
             "intellij.charts",
+            "intellij.grid.impl",
+            "intellij.grid.core.impl",
+            "com.intellij",
             "com.intellij.platform.images",
             "com.intellij.database",
             "com.intellij.database.ide",
-            "intellij.grid.impl",
-            "intellij.grid.core.impl",
 
             // 自己追加
-            "com.intellij.plugins.datagrip.solarized.colorscheme",
+            "org.intellij.plugins.markdown",
+            "com.intellij.modules.json",
         ),
         "IU" to mutableListOf(
             // 必须且需要指定
@@ -77,21 +88,20 @@ class PluginService {
         ),
         "PY" to mutableListOf(
             // 必须且需要指定
-            "intellij.python.scientific",
-            "com.jetbrains.pycharm.pro.customization",
-            "com.intellij.platform.images",
             "intellij.charts",
             "intellij.grid.impl",
             "intellij.grid.core.impl",
-
-            // 必须且可不指定
-            "PythonCore",
             "com.intellij",
-            "org.toml.lang",
-            "com.intellij.modules.json",
+            "com.intellij.platform.images",
+
+            "PythonCore",
             "Pythonid",
             "intellij.jupyter",
+            "intellij.python.scientific",
             "com.intellij.notebooks.core",
+            "com.jetbrains.pycharm.pro.customization",
+            "org.toml.lang",
+            "com.intellij.modules.json",
         ),
         "WS" to mutableListOf(
             // 必须且需要指定

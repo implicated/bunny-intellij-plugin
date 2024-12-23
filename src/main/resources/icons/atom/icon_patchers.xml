@@ -9,7 +9,6 @@
   <iconPatcher name="Ant" remove="icons" append="/icons/atom/patch/icons/plugins/ant"/>
   <iconPatcher name="AppCode" remove="icons" append="/icons/atom/patch/icons/plugins/appcode"/>
   <iconPatcher name="BuildTools" remove="icons/buildTools" append="/icons/atom/patch/icons/buildTools"/>
-  <iconPatcher name="BeanValidation" remove="icons" append="/icons/atom/patch/icons/plugins/beanValidation"/>
   <iconPatcher name="BigData" remove="icons" append="/icons/atom/patch/icons/plugins/bigdata"/>
   <iconPatcher name="CLion" remove="" append="/icons/atom/patch/icons/plugins/clion"/>
   <iconPatcher name="CLionEmbedded" remove="" append="/icons/atom/patch/icons/plugins/clionEmbedded"/>
@@ -24,20 +23,17 @@
   <iconPatcher name="DataGrip" remove="" append="/icons/atom/patch/icons/plugins/datagrip"/>
   <iconPatcher name="Docker" remove="icons" append="/icons/atom/patch/icons/plugins/docker"/>
   <iconPatcher name="FeatureTrainer" remove="img" append="/icons/atom/patch/icons/plugins/features"/>
-  <iconPatcher name="FullLine" remove="icons" append="/icons/atom/patch/icons/plugins/fullLine"/>
   <iconPatcher name="Gateway" remove="" append="/icons/atom/patch/icons/plugins/gateway"/>
   <iconPatcher name="Goland" remove="icons" append="/icons/atom/patch/icons/plugins/goland"/>
   <iconPatcher name="Github" remove="org/jetbrains/plugins/github" append="/icons/atom/patch/icons/plugins/github"/>
   <iconPatcher name="Github2" remove="com.intellij.codeReview" append="/icons/atom/patch/icons/plugins/github"/>
   <iconPatcher name="Gitlab" remove="org/jetbrains/plugins/gitlab" append="/icons/atom/patch/icons/plugins/gitlab"/>
   <iconPatcher name="Gradle" remove="icons" append="/icons/atom/patch/icons/plugins/gradle"/>
-  <iconPatcher name="GraphQL" remove="icons" append="/icons/atom/patch/icons/plugins/graphql"/>
   <iconPatcher name="Groovy" remove="icons/groovy" append="/icons/atom/patch/icons/plugins/groovy"/>
   <iconPatcher name="Handlebars" remove="icons" append="/icons/atom/patch/icons/plugins/handlebars"/>
   <iconPatcher name="Images" remove="org/intellij/images/icons" append="/icons/atom/patch/icons/images"/>
   <iconPatcher name="JavaScript" remove="icons" append="/icons/atom/patch/icons/plugins/javascript"/>
   <iconPatcher name="JavaEE" remove="icons" append="/icons/atom/patch/icons/javaee"/>
-  <iconPatcher name="JPA" remove="icons" append="/icons/atom/patch/icons/plugins/jpa"/>
   <iconPatcher name="Kotlin" remove="org/jetbrains/kotlin/idea/icons" append="/icons/atom/patch/icons/plugins/kotlin"/>
   <iconPatcher name="Kubernetes" remove="icons" append="/icons/atom/patch/icons/plugins/kubernetes"/>
   <iconPatcher name="Markdown" remove="icons/editor_actions" append="/icons/atom/patch/icons/plugins/markdown"/>
@@ -85,21 +81,18 @@
   <glyphPatcher name="AOP" remove="icons" append="/icons/atom/patch/glyphs/plugins/aop"/>
   <glyphPatcher name="AppCode" remove="icons" append="/icons/atom/patch/glyphs/plugins/appcode"/>
   <glyphPatcher name="Aqua" remove="icons" append="/icons/atom/patch/glyphs/plugins/aqua"/>
-  <glyphPatcher name="BeanValidation" remove="icons" append="/icons/atom/patch/glyphs/plugins/beanValidation"/>
   <glyphPatcher name="CLion" remove="icons" append="/icons/atom/patch/glyphs/plugins/clion"/>
   <glyphPatcher name="CSS" remove="icons/css" append="/icons/atom/patch/glyphs/css"/>
   <glyphPatcher name="DataGrip" remove="icons" append="/icons/atom/patch/glyphs/plugins/datagrip"/>
   <glyphPatcher name="Freemarker" remove="icons" append="/icons/atom/patch/glyphs/plugins/freemarker"/>
   <glyphPatcher name="General" remove="general" append="/icons/atom/patch/glyphs/general"/>
   <glyphPatcher name="Goland" remove="icons" append="/icons/atom/patch/glyphs/plugins/goland"/>
-  <glyphPatcher name="GraphQL" remove="icons" append="/icons/atom/patch/glyphs/plugins/graphql"/>
   <glyphPatcher name="Groovy" remove="icons/groovy" append="/icons/atom/patch/glyphs/plugins/groovy"/>
   <glyphPatcher name="Gutter" remove="gutter" append="/icons/atom/patch/glyphs/gutter"/>
   <glyphPatcher name="JavaScript" remove="icons" append="/icons/atom/patch/glyphs/plugins/javascript"/>
   <glyphPatcher name="JavaScript PSI" remove="icons/classes" append="/icons/atom/patch/glyphs/plugins/javascript"/>
   <glyphPatcher name="JavaScript PSI 2" remove="icons/members" append="/icons/atom/patch/glyphs/plugins/javascript"/>
   <glyphPatcher name="JavaEE" remove="icons" append="/icons/atom/patch/glyphs/javaee"/>
-  <glyphPatcher name="JPA" remove="icons" append="/icons/atom/patch/glyphs/plugins/jpa"/>
   <glyphPatcher name="Kotlin" remove="org/jetbrains/kotlin/idea/icons" append="/icons/atom/patch/glyphs/plugins/kotlin"/>
   <glyphPatcher name="Less" remove="org/jetbrains/plugins/less" append="/icons/atom/patch/glyphs/plugins/less"/>
   <glyphPatcher name="Lombok" remove="icons" append="/icons/atom/patch/glyphs/plugins/lombok"/>
@@ -131,12 +124,11 @@
   <filePatcher name="DataGrip" remove="fileTypes" append="/icons/atom/patch/files/plugins/datagrip"/>
   <filePatcher name="Freemarker" remove="icons" append="/icons/atom/patch/files/plugins/freemarker"/>
   <filePatcher name="Goland" remove="icons" append="/icons/atom/patch/icons/plugins/goland"/>
-  <filePatcher name="GraphQL" remove="icons" append="/icons/atom/patch/icons/plugins/graphql"/>
   <filePatcher name="Groovy" remove="icons/groovy" append="/icons/atom/patch/files/plugins/groovy"/>
   <filePatcher name="Haml" remove="org/jetbrains/plugins/haml" append="/icons/atom/patch/files/plugins/haml"/>
   <filePatcher name="Handlebars" remove="icons" append="/icons/atom/patch/files/plugins/handlebars"/>
   <filePatcher name="I18n" remove="icons/com/jetbrains/localization" append="/icons/atom/patch/files/plugins/i18n"/>
-  <filePatcher name="JavaScript" remove="icons" append="/icons/atom/patch/files/plugins/javascript"/>
+  <filePatcher name="JavaScript" remove="icons/fileTypes" append="/icons/atom/patch/files/plugins/javascript"/>
   <filePatcher name="Kotlin" remove="org/jetbrains/kotlin/idea/icons" append="/icons/atom/patch/files/plugins/kotlin"/>
   <filePatcher name="Less" remove="org/jetbrains/plugins/less" append="/icons/atom/patch/files/plugins/less"/>
   <filePatcher name="Other" remove="icons" append="/icons/atom/patch/files/other"/>

@@ -49,10 +49,29 @@ class HollowFoldersDecorator : ProjectViewNodeDecorator, DumbAware {
             }
     }
 
-    private fun matchFolder(virtualFile: VirtualFile, data: PresentationData, project: Project): Icon? {
+   private fun matchFolder(virtualFile: VirtualFile, data: PresentationData, project: Project): Icon? {
         val openFiles = FileEditorManager.getInstance(project).openFiles
         val isOpen = openFiles.any { vf -> vf.path.contains(virtualFile.path) }
-        return if (!isOpen) {
+
+        return if (isOpen) {
+            val icon = Icons.foldersOpen
+                .filter { it.match(virtualFile) }
+                .maxByOrNull { it.priority }
+                ?.let {
+                    AppCache.instance.iconCache.getOrPut(it.icon) {
+                        Icons.getIcon(it.icon)
+                    }
+                }
+            when {
+                icon != null -> icon
+                data.getIcon(true) == PlatformIcons.PACKAGE_ICON -> PlatformIcons.PACKAGE_ICON
+                ProjectRootManager.getInstance(project).fileIndex.isExcluded(virtualFile) -> excluded
+                ProjectRootsUtil.isModuleContentRoot(virtualFile, project) -> module
+                ProjectRootsUtil.isInSource(virtualFile, project) -> source
+                ProjectRootsUtil.isInTestSource(virtualFile, project) -> test
+                else -> folderOpen
+            }
+        } else {
             Icons.folders
                 .filter { it.match(virtualFile) }
                 .maxByOrNull { it.priority }
@@ -61,25 +80,6 @@ class HollowFoldersDecorator : ProjectViewNodeDecorator, DumbAware {
                         Icons.getIcon(it.icon)
                     }
                 }
-        } else {
-            when {
-                data.getIcon(true) == PlatformIcons.PACKAGE_ICON -> PlatformIcons.PACKAGE_ICON
-                ProjectRootManager.getInstance(project).fileIndex.isExcluded(virtualFile) -> excluded
-                ProjectRootsUtil.isModuleContentRoot(virtualFile, project) -> module
-                ProjectRootsUtil.isInSource(virtualFile, project) -> source
-                ProjectRootsUtil.isInTestSource(virtualFile, project) -> test
-                else -> {
-                    Icons.foldersOpen
-                        .filter { it.match(virtualFile) }
-                        .maxByOrNull { it.priority }
-                        ?.let {
-                            AppCache.instance.iconCache.getOrPut(it.icon) {
-                                Icons.getIcon(it.icon)
-                            }
-                        }
-                        ?: folderOpen
-                }
-            }
         }
     }
 }

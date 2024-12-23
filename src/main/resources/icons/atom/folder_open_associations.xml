@@ -12,9 +12,9 @@
  <regex name="Angular" iconType="FOLDER" priority="100" pattern="^[\._]?(angular|ng(App)?)$" icon="/icons/atom/foldersOpen/angular.svg" folderColor="ff5252" folderIconColor="ffcdd2"/>
  <regex name="Animations" iconType="FOLDER" priority="100" pattern="^[\._]?(animations?|anims?|animated)$" icon="/icons/atom/foldersOpen/animations.svg" folderColor="ec407a" folderIconColor="f8bbd0"/>
  <regex name="Ansible" iconType="FOLDER" priority="100" pattern="^[\._]?(group_vars|host_vars|vars|roles|playbooks|ansible|collections)$" icon="/icons/atom/foldersOpen/ansible.svg" folderColor="ef5350" folderIconColor="ffcdd2"/>
- <regex name="Api" iconType="FOLDER" priority="100" pattern="^[\._]?(apis?|rest|parsers?)$" icon="/icons/atom/foldersOpen/api.svg" folderColor="FFF176" folderIconColor="F57F17"/>
+ <regex name="Api" iconType="FOLDER" priority="100" pattern="^[\._]?(apis?|rest|swagger|parsers?)$" icon="/icons/atom/foldersOpen/api.svg" folderColor="FFF176" folderIconColor="F57F17"/>
  <regex name="Apollo" iconType="FOLDER" priority="100" pattern="^[\._]?apollo(-(config|cache|client))?$" icon="/icons/atom/foldersOpen/apollo.svg" folderColor="7e57c2" folderIconColor="d1c4e9"/>
- <regex name="App" iconType="FOLDER" priority="100" pattern="^[\._]?(apps?|applications?|sdks?)$" icon="/icons/atom/foldersOpen/app.svg" folderColor="ef5350" folderIconColor="ffcdd2"/>
+ <regex name="App" iconType="FOLDER" priority="100" pattern="^[\._]?(apps?|applications?)$" icon="/icons/atom/foldersOpen/app.svg" folderColor="ef5350" folderIconColor="ffcdd2"/>
  <regex name="Appstore" iconType="FOLDER" priority="100" pattern="^[\._]?(xcodeproj|xcworkspace)$" icon="/icons/atom/foldersOpen/appstore.svg" folderColor="42a5f5" folderIconColor="bbdefb"/>
  <regex name="Archetype" iconType="FOLDER" priority="100" pattern="^[\._]?(archetypes?|schematics?)" icon="/icons/atom/foldersOpen/archetype.svg" folderColor="f06292" folderIconColor="f8bbd0"/>
  <regex name="Archives" iconType="FOLDER" priority="100" pattern="^[\._]?(archives?|jars?|zips?|backups?)" icon="/icons/atom/foldersOpen/archive.svg" folderColor="795548" folderIconColor="D7CCC8"/>
@@ -25,7 +25,7 @@
  <regex name="Automator" iconType="FOLDER" priority="100" pattern="[\.]?(cactions?|definitions?|workflows?|automations?)$" icon="/icons/atom/foldersOpen/automator.svg" folderColor="b3e5fc" folderIconColor="0077db"/>
  <regex name="Audio" iconType="FOLDER" priority="100" pattern="^[\._]?(mp3|wav|musics?|audio|sounds?|bgms?|soundtracks?|osts?)$" icon="/icons/atom/foldersOpen/audio.svg" folderColor="ef5350" folderIconColor="ffcdd2"/>
  <regex name="Aurelia" iconType="FOLDER" priority="100" pattern="^[\._]?aurelia_project$" icon="/icons/atom/foldersOpen/aurelia.svg" folderColor="f06292" folderIconColor="F8BBD0"/>
- <regex name="AWS" iconType="FOLDER" priority="100" pattern="^[\._]?(aws|amazon|s3|ecs|ecr|tableau|cloudfront|athena|cloudflare)$" icon="/icons/atom/foldersOpen/aws.svg" folderColor="FF8F00" folderIconColor="ffecb3"/>
+ <regex name="AWS" iconType="FOLDER" priority="100" pattern="^[\._]?(aws|amazon|s3|ecs|ecr|tableau|cloudfront|athena)$" icon="/icons/atom/foldersOpen/aws.svg" folderColor="FF8F00" folderIconColor="ffecb3"/>
  <regex name="Azure Devops" iconType="FOLDER" priority="100" pattern="^[\._]?(azure|azuredevops?|azure-devops?)$" icon="/icons/atom/foldersOpen/azure-devops.svg" folderColor="b3e5fc" folderIconColor="0077db"/>
  <regex name="Azure Pipelines" iconType="FOLDER" priority="100" pattern="^[\._]?(azurepipelines|azure-pipelines)$" icon="/icons/atom/foldersOpen/azure-pipelines.svg" folderColor="b3e5fc" folderIconColor="0077db"/>
  <regex name="Base" iconType="FOLDER" priority="100" pattern="^[\._]?(bases?|abstract|parents?)$" icon="/icons/atom/foldersOpen/base.svg" folderColor="cd9575" folderIconColor="FFE0B2"/>
@@ -39,7 +39,7 @@
  <regex name="Buildkite" iconType="FOLDER" priority="100" pattern="^[\._]?buildkite$" icon="/icons/atom/foldersOpen/buildkite.svg" folderColor="689f38" folderIconColor="dcedc8"/>
  <regex name="Cabal" iconType="FOLDER" priority="100" pattern="[\.]?cabal$" icon="/icons/atom/foldersOpen/cabal.svg" folderColor="673AB7" folderIconColor="c792ea"/>
  <regex name="Cake" iconType="FOLDER" priority="100" pattern="^[\._]?cake$" icon="/icons/atom/foldersOpen/cake.svg" folderColor="E57373" folderIconColor="FFCDD2"/>
- <regex name="Cart" iconType="FOLDER" priority="100" pattern="^[\._]?(carts?|shops?|baskets?|marketing|products?|skus?)$" icon="/icons/atom/foldersOpen/cart.svg" folderColor="FFA000" folderIconColor="FFECB3"/>
+ <regex name="Cart" iconType="FOLDER" priority="100" pattern="^[\._]?(carts?|shops?|baskets?|marketing)$" icon="/icons/atom/foldersOpen/cart.svg" folderColor="FFA000" folderIconColor="FFECB3"/>
  <regex name="Channels" iconType="FOLDER" priority="100" pattern="^[\._]?(channels?)$" icon="/icons/atom/foldersOpen/channels.svg" folderColor="673AB7" folderIconColor="9575CD"/>
  <regex name="Charts" iconType="FOLDER" priority="100" pattern="^[\._]?(graphs?|d3|metrics?|analytics?)$" icon="/icons/atom/foldersOpen/charts.svg" folderColor="FFA726" folderIconColor="FFF8E1"/>
  <regex name="Chef" iconType="FOLDER" priority="100" pattern="^[\._]?(chef|recipes?)$" icon="/icons/atom/foldersOpen/chef.svg" folderColor="EA7130" folderIconColor="FFCCBC"/>
@@ -51,7 +51,7 @@
  <regex name="CNAB" iconType="FOLDER" priority="100" pattern="^[\._]?cnab$" icon="/icons/atom/foldersOpen/cnab.svg" folderColor="009688" folderIconColor="B2DFDB"/>
  <regex name="Cobol" iconType="FOLDER" priority="100" pattern="^[\._]?cobol$" icon="/icons/atom/foldersOpen/cobol.svg" folderColor="0288d1" folderIconColor="b3e5fc"/>
  <regex name="CodeSandbox" iconType="FOLDER" priority="100" pattern="^[\._]?codesandbox$" icon="/icons/atom/foldersOpen/codesandbox.svg" folderColor="546E7A" folderIconColor="F5F5F5"/>
- <regex name="Components" iconType="FOLDER" priority="100" pattern="^[\._]?(components?|widgets?|elements?|directives?)$" icon="/icons/atom/foldersOpen/components.svg" folderColor="F9A825" folderIconColor="FFECB3"/>
+ <regex name="Components" iconType="FOLDER" priority="100" pattern="^[\._]?(components?|widgets?|elements?|ui|directives?)$" icon="/icons/atom/foldersOpen/components.svg" folderColor="F9A825" folderIconColor="FFECB3"/>
  <regex name="Composer" iconType="FOLDER" priority="100" pattern="^[\._]?composer$" icon="/icons/atom/foldersOpen/composer.svg" folderColor="F9A825" folderIconColor="FFECB3"/>
  <regex name="Conductor" iconType="FOLDER" priority="100" pattern="^[\._]?conductors?$" icon="/icons/atom/foldersOpen/conductor.svg" folderColor="26A69A" folderIconColor="B2EBF2"/>
  <regex name="Config" iconType="FOLDER" priority="100" pattern="^[\._]?(cfg|configs?|conf(iguration)?|settings?|options?)$" icon="/icons/atom/foldersOpen/config.svg" folderColor="00ACC1" folderIconColor="80DEEA"/>
@@ -71,7 +71,6 @@
  <regex name="CVS" iconType="FOLDER" priority="100" pattern="^CVS$" icon="/icons/atom/foldersOpen/cvs.svg" folderColor="FBC02D" folderIconColor="FFECB3"/>
  <regex name="Cypress" iconType="FOLDER" priority="100" pattern="^[\._]?cypress$" icon="/icons/atom/foldersOpen/cypress.svg" folderColor="78909C" folderIconColor="616161"/>
  <regex name="Dapr" iconType="FOLDER" priority="100" pattern="^[\._]?dapr$" icon="/icons/atom/foldersOpen/dapr.svg" folderColor="01579b" folderIconColor="9FA8DA"/>
- <regex name="Dart" iconType="FOLDER" priority="100" pattern="^[\._]?dart$" icon="/icons/atom/foldersOpen/dart.svg" folderColor="47C5FB" folderIconColor="#BBDEFB"/>
  <regex name="DB" iconType="FOLDER" priority="100" pattern="^[\._]?(db|migrat(e|ions)|database|repos?|repositories|repository)$" icon="/icons/atom/foldersOpen/db.svg" folderColor="7CB342" folderIconColor="C5E1A5"/>
  <regex name="Debian" iconType="FOLDER" priority="100" pattern="^[\._]?(deb|debian)$" icon="/icons/atom/foldersOpen/debian.svg" folderColor="EC407A" folderIconColor="FCE4EC"/>
  <regex name="Debug" iconType="FOLDER" priority="100" pattern="^[\._]?(debug|debugging|bugs?)$" icon="/icons/atom/foldersOpen/debug.svg" folderColor="D32F2F" folderIconColor="F48FB1"/>
@@ -82,11 +81,10 @@
  <regex name="Deploy" iconType="FOLDER" priority="100" pattern="^[\._]?(deploy|deployment)s?$" icon="/icons/atom/foldersOpen/deploy.svg" folderColor="FF8F00" folderIconColor="ffecb3"/>
  <regex name="DevContainer" iconType="FOLDER" priority="100" pattern="[\.]?devcontainer$" icon="/icons/atom/foldersOpen/devcontainer.svg" folderColor="ff7043" folderIconColor="ffccbc"/>
  <regex name="Dist" iconType="FOLDER" priority="100" pattern="^[\._]?(dist|distributions?|out|builds?|releases?)$" icon="/icons/atom/foldersOpen/dist.svg" folderColor="e57373" folderIconColor="ffcdd2"/>
- <regex name="Docker" iconType="FOLDER" priority="100" pattern="^[\._]?(docker|dockerfiles|dockerhub)$" icon="/icons/atom/foldersOpen/docker.svg" folderColor="039be5" folderIconColor="b3e5fc"/>
+ <regex name="Docker" iconType="FOLDER" priority="100" pattern="^[\._]?(docker|dockerfiles)$" icon="/icons/atom/foldersOpen/docker.svg" folderColor="039be5" folderIconColor="b3e5fc"/>
  <regex name="Docs" iconType="FOLDER" priority="100" pattern="^[\._]?(docs?|documentation|texts?)$" icon="/icons/atom/foldersOpen/docs.svg" folderColor="0277bd" folderIconColor="b3e5fc"/>
  <regex name="Domain" iconType="FOLDER" priority="100" pattern="^[\._]?(domains?)$" icon="/icons/atom/foldersOpen/domain.svg" folderColor="78909C" folderIconColor="CFD8DC"/>
  <regex name="Downloads" iconType="FOLDER" priority="100" pattern="^[\._]?(dl|downloads?)$" icon="/icons/atom/foldersOpen/download.svg" folderColor="4caf50" folderIconColor="c8e6c9"/>
- <regex name="Drizzle" iconType="FOLDER" priority="100" pattern="^[\._]?drizzle$" icon="/icons/atom/foldersOpen/drizzle.svg" folderColor="4caf50" folderIconColor="c8e6c9"/>
  <regex name="Dropbox" iconType="FOLDER" priority="100" pattern="^[\._]?dropbox(\.cache)?$" icon="/icons/atom/foldersOpen/dropbox.svg" folderColor="0277bd" folderIconColor="b3e5fc"/>
  <regex name="Dub" iconType="FOLDER" priority="100" pattern="^[\._]?dub$" icon="/icons/atom/foldersOpen/dub.svg" folderColor="D32F2F" folderIconColor="F48FB1"/>
  <regex name="Dump" iconType="FOLDER" priority="100" pattern="^[\._]?(dumps?|data)$" icon="/icons/atom/foldersOpen/dump.svg" folderColor="757575" folderIconColor="bdbdbd"/>
@@ -96,23 +94,20 @@
  <regex name="Electron" iconType="FOLDER" priority="100" pattern="^[\._]?electron$" icon="/icons/atom/foldersOpen/electron.svg" folderColor="039BE5" folderIconColor="B3E5FC"/>
  <regex name="Elixir" iconType="FOLDER" priority="100" pattern="^[\._]?(elixir|ex|l?eex|elixir_ls)$" icon="/icons/atom/foldersOpen/elixir.svg" folderColor="9575cd" folderIconColor="dfceff"/>
  <regex name="Emacs" iconType="FOLDER" priority="100" pattern="[\.]?emacs\.d$" icon="/icons/atom/foldersOpen/emacs.svg" folderColor="9C27B0" folderIconColor="E1BEE7"/>
- <regex name="Empties" iconType="FOLDER" priority="100" pattern="^[\._]?(empty|empties|stocks)$" icon="/icons/atom/foldersOpen/empties.svg" folderColor="8690BA" folderIconColor="E9EAEA"/>
  <regex name="Env" iconType="FOLDER" priority="100" pattern="^[\._]?(envs?|environments?)$" icon="/icons/atom/foldersOpen/env.svg" folderColor="8BC34A" folderIconColor="DCEDC8"/>
  <regex name="Error" iconType="FOLDER" priority="100" pattern="^[\._]?(errors?|exceptions?|crash(es)?)$" icon="/icons/atom/foldersOpen/error.svg" folderColor="ef5350" folderIconColor="ffcdd2"/>
- <regex name="Events" iconType="FOLDER" priority="100" pattern="^[\._]?(events?|signals?)$" icon="/icons/atom/foldersOpen/events.svg" folderColor="66BB6A" folderIconColor="C8E6C9"/>
+ <regex name="Events" iconType="FOLDER" priority="100" pattern="^[\._]?(events?)$" icon="/icons/atom/foldersOpen/events.svg" folderColor="66BB6A" folderIconColor="C8E6C9"/>
  <regex name="Examples" iconType="FOLDER" priority="100" pattern="^[\._]?(examples?|demos?|samples?)$" icon="/icons/atom/foldersOpen/examples.svg" folderColor="009688" folderIconColor="b2dfdb"/>
  <regex name="Exclude" iconType="FOLDER" priority="100" pattern="^[\._]?(excludes?|external|output|exports?|exported)$" icon="/icons/atom/foldersOpen/exclude.svg" folderColor="ff8a65" folderIconColor="fbe9e7"/>
  <regex name="Expo" iconType="FOLDER" priority="100" pattern="[\.]?expo(-shared)?$" icon="/icons/atom/foldersOpen/expo.svg" folderColor="01579b" folderIconColor="9FA8DA"/>
  <regex name="Fastlane" iconType="FOLDER" priority="100" pattern="^[\._]?(fastlane)$" icon="/icons/atom/foldersOpen/fastlane.svg" folderColor="1e88e5" folderIconColor="e3f2fd"/>
  <regex name="FAQ" iconType="FOLDER" priority="100" pattern="^[\._]?faqs?$" icon="/icons/atom/foldersOpen/faq.svg" folderColor="ffab00" folderIconColor="ffe57f"/>
- <regex name="Favorites" iconType="FOLDER" priority="100" pattern="^[\._]?(favorites?|favs?|bookmarks?)$" icon="/icons/atom/foldersOpen/favorites.svg" folderColor="F06292" folderIconColor="EBEBEB"/>
  <regex name="Features" iconType="FOLDER" priority="100" pattern="^[\._]?(features?|feats?)$" icon="/icons/atom/foldersOpen/features.svg" folderColor="ef5350" folderIconColor="ffcdd2"/>
  <regex name="Firebase" iconType="FOLDER" priority="100" pattern="^[\._]?firebase$" icon="/icons/atom/foldersOpen/firebase.svg" folderColor="fbc02d" folderIconColor="fff9c4"/>
  <regex name="Fixtures" iconType="FOLDER" priority="100" pattern="^[\._]?(fixtures?|fabricators?|factory|factories)$" icon="/icons/atom/foldersOpen/fixtures.svg" folderColor="9E9D24" folderIconColor="F0F4C3"/>
  <regex name="Flow" iconType="FOLDER" priority="100" pattern="^[\._]?(flow|defs?)$" icon="/icons/atom/foldersOpen/flow.svg" folderColor="37474F" folderIconColor="fbc02d"/>
  <regex name="Fluig" iconType="FOLDER" priority="100" pattern="^[\._]?fluig$" icon="/icons/atom/foldersOpen/fluig.svg" folderColor="E51358" folderIconColor="ECEFF1"/>
- <regex name="Flutter" iconType="FOLDER" priority="100" pattern="^[\._]?flutter$" icon="/icons/atom/foldersOpen/flutter.svg" folderColor="03a9f4" folderIconColor="b3e5fc"/>
- <regex name="Fonts" iconType="FOLDER" priority="100" pattern="^[\._]?(fonts?|typefaces?)$" icon="/icons/atom/foldersOpen/fonts.svg" folderColor="607D8B" folderIconColor="CFD8DC"/>
+ <regex name="Fonts" iconType="FOLDER" priority="100" pattern="^[\._]?fonts?$" icon="/icons/atom/foldersOpen/fonts.svg" folderColor="607D8B" folderIconColor="CFD8DC"/>
  <regex name="Functions" iconType="FOLDER" priority="100" pattern="^[\._]?(funcs?|functions?|services?|lambdas?|handlers?|rpc)$" icon="/icons/atom/foldersOpen/functions.svg" folderColor="039BE5" folderIconColor="B3E5FC"/>
  <regex name="Google Cloud" iconType="FOLDER" priority="100" pattern="^[\._]?(gcp|gcloud)$" icon="/icons/atom/foldersOpen/gcloud.svg" folderColor="ef5350" folderIconColor="ffcdd2"/>
  <regex name="Generated" iconType="FOLDER" priority="100" pattern="^[\._]?(gen|generated|generators?|auto)$" icon="/icons/atom/foldersOpen/generated.svg" folderColor="EC407A" folderIconColor="FCE4EC"/>
@@ -131,19 +126,18 @@
  <regex name="Helm" iconType="FOLDER" priority="100" pattern="^[\._]?(helm|charts?|helmcharts?|helmfiles?)$" icon="/icons/atom/foldersOpen/helm.svg" folderColor="0288d1" folderIconColor="B2EBF2"/>
  <regex name="Helpers" iconType="FOLDER" priority="100" pattern="^[\._]?(helpers?|help)$" icon="/icons/atom/foldersOpen/helper.svg" folderColor="afb42b" folderIconColor="f0f4c3"/>
  <regex name="Home" iconType="FOLDER" priority="100" pattern="^[\._]?(home|blog|start|tutos?|tutorials?)$" icon="/icons/atom/foldersOpen/home.svg" folderColor="8D6E63" folderIconColor="BCAAA4"/>
- <regex name="Hooks" iconType="FOLDER" priority="100" pattern="^[\._]?(hooks?|triggers?|composables?)" icon="/icons/atom/foldersOpen/hook.svg" folderColor="9575CD" folderIconColor="D1C4E9"/>
+ <regex name="Hooks" iconType="FOLDER" priority="100" pattern="^[\._]?(hooks?|triggers?)" icon="/icons/atom/foldersOpen/hook.svg" folderColor="9575CD" folderIconColor="D1C4E9"/>
  <regex name="Husky" iconType="FOLDER" priority="100" pattern="^[\._]?husky$" icon="/icons/atom/foldersOpen/husky.svg" folderColor="607D8B" folderIconColor="ECEFF1"/>
  <regex name="i18n" iconType="FOLDER" priority="100" pattern="^[\._]?(i18n|langs?|languages?|localization|locales?|translations?|l10n|g11n)$" icon="/icons/atom/foldersOpen/i18n.svg" folderColor="5c6bc0" folderIconColor="c5cae9"/>
  <regex name="Icons" iconType="FOLDER" priority="100" pattern="^[\._]?(icons?|ico|glyphs?|favicons?)$" icon="/icons/atom/foldersOpen/icons.svg" folderColor="009688" folderIconColor="b2dfdb"/>
  <regex name="idea" iconType="FOLDER" priority="100" pattern="^[\._]?(idea|META-INF|intellijPlatform)$" icon="/icons/atom/foldersOpen/idea.svg" folderColor="00BCD4" folderIconColor="087CFA"/>
  <regex name="Images" iconType="FOLDER" priority="100" pattern="^[\._]?(images?|img|medias?|pics?|pictures?|gallery|figures?|pngs?|jpgs?)$" icon="/icons/atom/foldersOpen/images.svg" folderColor="009688" folderIconColor="b2dfdb"/>
- <regex name="Include" iconType="FOLDER" priority="100" pattern="^[\._]?(inc(ludes?)?|imports?|imported|concerns?|deps?|dependencies)$" icon="/icons/atom/foldersOpen/include.svg" folderColor="039be5" folderIconColor="b3e5fc"/>
+ <regex name="Include" iconType="FOLDER" priority="100" pattern="^[\._]?(inc(ludes?)?|imports?|imported|input|concerns?|deps?|dependencies)$" icon="/icons/atom/foldersOpen/include.svg" folderColor="039be5" folderIconColor="b3e5fc"/>
  <regex name="Info" iconType="FOLDER" priority="100" pattern="^[\._]?(infos?|informations?)$" icon="/icons/atom/foldersOpen/info.svg" folderColor="00b0ff" folderIconColor="b3e5fc"/>
  <regex name="Init" iconType="FOLDER" priority="100" pattern="^[\._]?(init|initializers?|startup)$" icon="/icons/atom/foldersOpen/init.svg" folderColor="9575CD" folderIconColor="D1C4E9"/>
  <regex name="Injection" iconType="FOLDER" priority="100" pattern="^[\._]?(injections?|di|injector)$" icon="/icons/atom/foldersOpen/injection.svg" folderColor="00BCD4" folderIconColor="087CFA"/>
  <regex name="Interceptors" iconType="FOLDER" priority="100" pattern="^[\._]?interceptors?$" icon="/icons/atom/foldersOpen/interceptor.svg" folderColor="8D6E63" folderIconColor="D7CCC8"/>
  <regex name="Internal" iconType="FOLDER" priority="100" pattern="^[\._]?internals?$" icon="/icons/atom/foldersOpen/internal.svg" folderColor="546e7a" folderIconColor="cfd8dc"/>
- <regex name="Islands" iconType="FOLDER" priority="100" pattern="^[\._]?(islands?)$" icon="/icons/atom/foldersOpen/islands.svg" folderColor="F78C6C" folderIconColor="FFE0B2"/>
  <regex name="Istanbul" iconType="FOLDER" priority="100" pattern="[\.]?nyc([-_]output)?$" icon="/icons/atom/foldersOpen/istanbul.svg" folderColor="FFB300" folderIconColor="FFF9C4"/>
  <regex name="iOS" iconType="FOLDER" priority="100" pattern=".*\.(xcassets|lproj)" icon="/icons/atom/foldersOpen/ios.svg" folderColor="78909c" folderIconColor="cfd8dc"/>
  <regex name="iOS App" iconType="FOLDER" priority="100" pattern="^[\._]?ios(App)?$" icon="/icons/atom/foldersOpen/iosapp.svg" folderColor="78909c" folderIconColor="cfd8dc"/>
@@ -182,23 +176,20 @@
  <regex name="MJML" iconType="FOLDER" priority="100" pattern="^[\._]?mjml$" icon="/icons/atom/foldersOpen/mjml.svg" folderColor="F26B00" folderIconColor="FFE0B2"/>
  <regex name="Mobile" iconType="FOLDER" priority="100" pattern="^[\._]?(mobiles?|portables?)$" icon="/icons/atom/foldersOpen/mobile.svg" folderColor="ff5252" folderIconColor="ffcdd2"/>
  <regex name="Mocks" iconType="FOLDER" priority="100" pattern="^[\._]?(mocks?|fakes?|stubs?|wireframes?|sketch(es)?)$" icon="/icons/atom/foldersOpen/mocks.svg" folderColor="8d6e63" folderIconColor="BCAAA4"/>
- <regex name="Modals" iconType="FOLDER" priority="100" pattern="^[\._]?(modals?|portals?|usecases?|dialogs?|dialogbox(es)?|popups?)$" icon="/icons/atom/foldersOpen/modals.svg" folderColor="8d6e63" folderIconColor="D7CCC8"/>
+ <regex name="Modals" iconType="FOLDER" priority="100" pattern="^[\._]?(modals?|portals?|usecases?|dialogs?|popups?)$" icon="/icons/atom/foldersOpen/modals.svg" folderColor="8d6e63" folderIconColor="D7CCC8"/>
  <regex name="Models" iconType="FOLDER" priority="100" pattern="^[\._]?(models?|structs?|class|classes|entity|entities|dto|objects?)$" icon="/icons/atom/foldersOpen/models.svg" folderColor="00796B" folderIconColor="80CBC4"/>
  <regex name="Molecules" iconType="FOLDER" priority="100" pattern="^[\._]?molecules?$" icon="/icons/atom/foldersOpen/molecules.svg" folderColor="039BE5" folderIconColor="B3E5FC"/>
  <regex name="MongoDB" iconType="FOLDER" priority="100" pattern="^[\._]?mongo(db)?$" icon="/icons/atom/foldersOpen/mongo.svg" folderColor="66BB6A" folderIconColor="C8E6C9"/>
  <regex name="Moon" iconType="FOLDER" priority="100" pattern="^[\._]?moon$" icon="/icons/atom/foldersOpen/moon.svg" folderColor="6e58d1" folderIconColor="A596F6"/>
- <regex name="MSW" iconType="FOLDER" priority="100" pattern="^[\._]?(msw)$" icon="/icons/atom/foldersOpen/msw.svg" folderColor="ff7043" folderIconColor="ffccbc"/>
  <regex name="Navigation" iconType="FOLDER" priority="100" pattern="[\._]?(geo|nav|navigate|navigations?)" icon="/icons/atom/foldersOpen/navigation.svg" folderColor="ff7043" folderIconColor="ffccbc"/>
  <regex name="Netlify" iconType="FOLDER" priority="100" pattern="^[\._]?netlify" icon="/icons/atom/foldersOpen/netlify.svg" folderColor="00ad9f" folderIconColor="b3e6e2"/>
  <regex name="Next" iconType="FOLDER" priority="100" pattern="^[\._]?next$" icon="/icons/atom/foldersOpen/next.svg" folderColor="607D8B" folderIconColor="ECEFF1"/>
  <regex name="Node Modules" iconType="FOLDER" priority="100" pattern="^[\._]?(node_modules|node(js)?|npm)$" icon="/icons/atom/foldersOpen/node.svg" folderColor="8bc34a" folderIconColor="dcedc8"/>
- <regex name="Notebooks" iconType="FOLDER" priority="100" pattern="[\._]?(notebooks?|jupyter|jupyter-notebooks?|ipynb)" icon="/icons/atom/foldersOpen/notebooks.svg" folderColor="F78C6C" folderIconColor="FFE0B2"/>
+ <regex name="Notebooks" iconType="FOLDER" priority="100" pattern="[\._]?(notebooks?|jupyter|jupyter-notebooks?)" icon="/icons/atom/foldersOpen/notebooks.svg" folderColor="F78C6C" folderIconColor="FFE0B2"/>
  <regex name="Notifications" iconType="FOLDER" priority="100" pattern="[\._]?(notif|notifications?|flash)" icon="/icons/atom/foldersOpen/notification.svg" folderColor="00B0FF" folderIconColor="B3E5FC"/>
  <regex name="NuGet" iconType="FOLDER" priority="100" pattern="^[\._]?nuget$" icon="/icons/atom/foldersOpen/nuget.svg" folderColor="795548" folderIconColor="BCAAA4"/>
  <regex name="Nuxt" iconType="FOLDER" priority="100" pattern="[\._]?nuxt$" icon="/icons/atom/foldersOpen/nuxt.svg" folderColor="009688" folderIconColor="80eec0"/>
- <regex name="Nx" iconType="FOLDER" priority="100" pattern="^[\._]?nx$" icon="/icons/atom/foldersOpen/nx.svg" folderColor="64B5F6" folderIconColor="DFF8FB"/>
  <regex name="OpenShift" iconType="FOLDER" priority="100" pattern="^[\._]?openshift$" icon="/icons/atom/foldersOpen/openshift.svg" folderColor="c62828" folderIconColor="ffcdd2"/>
- <regex name="Orders" iconType="FOLDER" priority="100" pattern="^[\._]?(orders?|lists?|listings?)$" icon="/icons/atom/foldersOpen/orders.svg" folderColor="D65C75" folderIconColor="EBEBEB"/>
  <regex name="Other" iconType="FOLDER" priority="100" pattern="^[\._]?(other|misc|extras?|etc)$" icon="/icons/atom/foldersOpen/other.svg" folderColor="795548" folderIconColor="BCAAA4"/>
  <regex name="Packages" iconType="FOLDER" priority="100" pattern="^[\._]?(packages?|bundles?|paket|modules?|pkgs?)$" icon="/icons/atom/foldersOpen/packages.svg" folderColor="5C6BC0" folderIconColor="C5CAE9"/>
  <regex name="Parcel" iconType="FOLDER" priority="100" pattern="^[\._]?(parcel|parcel-cache)$" icon="/icons/atom/foldersOpen/parcel.svg" folderColor="FFB74D" folderIconColor="FFE0B2"/>
@@ -216,7 +207,6 @@
  <regex name="Protobuf" iconType="FOLDER" priority="100" pattern="^[\._]?proto(bufs?)?$" icon="/icons/atom/foldersOpen/protobuf.svg" folderColor="7986CB" folderIconColor="D1C4E9"/>
  <regex name="Prisma" iconType="FOLDER" priority="100" pattern="^[\._]?prisma$" icon="/icons/atom/foldersOpen/prisma.svg" folderColor="00BFA5" folderIconColor="a7ffeb"/>
  <regex name="Private" iconType="FOLDER" priority="100" pattern="^[\._]?private$" icon="/icons/atom/foldersOpen/private.svg" folderColor="ff5252" folderIconColor="ffcdd2"/>
- <regex name="Profiles" iconType="FOLDER" priority="100" pattern="^[\._]?(profiles?|personas?)$" icon="/icons/atom/foldersOpen/profiles.svg" folderColor="7491EE" folderIconColor="EBEBEB"/>
  <regex name="Projects" iconType="FOLDER" priority="100" pattern="^[\._]?(proj|projects?)$" icon="/icons/atom/foldersOpen/project.svg" folderColor="00BFA5" folderIconColor="a7ffeb"/>
  <regex name="Providers" iconType="FOLDER" priority="100" pattern="^[\._]?providers?$" icon="/icons/atom/foldersOpen/providers.svg" folderColor="757575" folderIconColor="FFEE58"/>
  <regex name="Python" iconType="FOLDER" priority="100" pattern="^[\._]?(python|py|__pycache__|pytest_cache)$" icon="/icons/atom/foldersOpen/python.svg" folderColor="3949AB" folderIconColor="FFE0B2"/>
@@ -256,11 +246,10 @@
  <regex name="Serverless" iconType="FOLDER" priority="100" pattern="^[\._]?(serverless|infra(structure)?)$" icon="/icons/atom/foldersOpen/serverless.svg" folderColor="757575" folderIconColor="FFEE58"/>
  <regex name="Shader" iconType="FOLDER" priority="100" pattern="^[\._]?(shaders?|glsl|hlsl)$" icon="/icons/atom/foldersOpen/shader.svg" folderColor="AB47BC" folderIconColor="E1BEE7"/>
  <regex name="Shared" iconType="FOLDER" priority="100" pattern="^[\._]?(shared?|common|shared_components)$" icon="/icons/atom/foldersOpen/shared.svg" folderColor="66BB6A" folderIconColor="C8E6C9"/>
- <regex name="Skeletons" iconType="FOLDER" priority="100" pattern="^[\._]?(skeletons?|placeholders?)$" icon="/icons/atom/foldersOpen/skeletons.svg" folderColor="616161" folderIconColor="FFA726"/>
- <regex name="Sources" iconType="FOLDER" priority="100" pattern="^[\._]?(src|sources?|code|buildSrc|snippets?)$" icon="/icons/atom/foldersOpen/src.svg" folderColor="5C6BC0" folderIconColor="89ddff"/>
+ <regex name="Sources" iconType="FOLDER" priority="100" pattern="^[\._]?(src|sources?|code|buildSrc)$" icon="/icons/atom/foldersOpen/src.svg" folderColor="5C6BC0" folderIconColor="89ddff"/>
  <regex name="SQL" iconType="FOLDER" priority="100" pattern="^[\._]?(sql|mysql|pgsql|maria(db)?)$" icon="/icons/atom/foldersOpen/sql.svg" folderColor="0288D1" folderIconColor="b2dfdb"/>
  <regex name="SSO" iconType="FOLDER" priority="100" pattern="^[\._]?sso$" icon="/icons/atom/foldersOpen/sso.svg" folderColor="26A69A" folderIconColor="B2DFDB"/>
- <regex name="SST" iconType="FOLDER" priority="100" pattern="^[\._]?sst$" icon="/icons/atom/foldersOpen/sst.svg" folderColor="FF7043" folderIconColor="FAFAFA"/>
+ <regex name="SST" iconType="FOLDER" priority="100" pattern="^[\._]?(sst|stacks?)$" icon="/icons/atom/foldersOpen/sst.svg" folderColor="FF7043" folderIconColor="FAFAFA"/>
  <regex name="Stack" iconType="FOLDER" priority="100" pattern="^[\._]?(structures?|stacks?)$" icon="/icons/atom/foldersOpen/stack.svg" folderColor="FFA726" folderIconColor="ffe0b2"/>
  <regex name="Stencil" iconType="FOLDER" priority="100" pattern="^[\._]?stencil$" icon="/icons/atom/foldersOpen/stencil.svg" folderColor="9C27B0" folderIconColor="C792EA"/>
  <regex name="Storage" iconType="FOLDER" priority="100" pattern="^[\._]?(storages?|packets?|buckets?)$" icon="/icons/atom/foldersOpen/storage.svg" folderColor="FF9900" folderIconColor="FFD391"/>
@@ -279,7 +268,7 @@
  <regex name="Sync" iconType="FOLDER" priority="100" pattern="^[\._]?(sync|synced)$" icon="/icons/atom/foldersOpen/sync.svg" folderColor="0288d1" folderIconColor="b3e5fc"/>
  <regex name="Syntax" iconType="FOLDER" priority="100" pattern="^[\._]?(syntax|syntaxes|spellcheck|grammars?)$" icon="/icons/atom/foldersOpen/syntax.svg" folderColor="ef5350" folderIconColor="FFCDD2"/>
  <regex name="Target" iconType="FOLDER" priority="100" pattern="^[\._]?targets?$" icon="/icons/atom/foldersOpen/target.svg" folderColor="4DB6AC" folderIconColor="E0F2F1"/>
- <regex name="Tasks" iconType="FOLDER" priority="100" pattern="^[\._]?(cli|tasks?|commands?|cmd|consoles?|.run|workflows?|tickets?|shell|bash|zsh|fish)$" icon="/icons/atom/foldersOpen/tasks.svg" folderColor="795774" folderIconColor="CE93D8"/>
+ <regex name="Tasks" iconType="FOLDER" priority="100" pattern="^[\._]?(cli|tasks?|commands?|cmd|consoles?|.run|workflows?|tickets?)$" icon="/icons/atom/foldersOpen/tasks.svg" folderColor="795774" folderIconColor="CE93D8"/>
  <regex name="Taskfile" iconType="FOLDER" priority="100" pattern="^[\._]?(taskfiles?)$" icon="/icons/atom/foldersOpen/taskfile.svg" folderColor="168e80" folderIconColor="69d2c8"/>
  <regex name="Tauri" iconType="FOLDER" priority="100" pattern="^[\._]?(src-)?tauri$" icon="/icons/atom/foldersOpen/tauri.svg" folderColor="26C6DA" folderIconColor="FFECB3"/>
  <regex name="Tech" iconType="FOLDER" priority="100" pattern="^[\._]?(tech(nology|nologies)?)$" icon="/icons/atom/foldersOpen/tech.svg" folderColor="8a2be2" folderIconColor="c695f9"/>
@@ -296,9 +285,9 @@
  <regex name="Unity" iconType="FOLDER" priority="100" pattern="^[\._]?unity(3d)?$" icon="/icons/atom/foldersOpen/unity.svg" folderColor="1976d2" folderIconColor="bbdefb"/>
  <regex name="Upload" iconType="FOLDER" priority="100" pattern="^[\._]?(uploads?|updates?|updated|upgrades?)$" icon="/icons/atom/foldersOpen/upload.svg" folderColor="ff7043" folderIconColor="FFEBEE"/>
  <regex name="Users" iconType="FOLDER" priority="100" pattern="^[\._]?(users?|members?|friends?|partners?|roles?|contacts?)$" icon="/icons/atom/foldersOpen/users.svg" folderColor="ec407a" folderIconColor="f8bbd0"/>
- <regex name="Utils" iconType="FOLDER" priority="100" pattern="^[\._]?(utils?|tools?|utilities|utility|toolkits?|toolbox(es)?|tooling|devtools)$" icon="/icons/atom/foldersOpen/tools.svg" folderColor="78909C" folderIconColor="F5F5F5"/>
+ <regex name="Utils" iconType="FOLDER" priority="100" pattern="^[\._]?(utils?|tools?|utilities|utility|toolkits?|toolbox(es)?|tooling)$" icon="/icons/atom/foldersOpen/tools.svg" folderColor="78909C" folderIconColor="F5F5F5"/>
  <regex name="Vagrant" iconType="FOLDER" priority="100" pattern="^[\._]?vagrant(\.d)?$" icon="/icons/atom/foldersOpen/vagrant.svg" folderColor="26A69A" folderIconColor="B2DFDB"/>
- <regex name="Vendors" iconType="FOLDER" priority="100" pattern="^[\._]?(vendors?|libs?|library|libraries|Pods?|stdlib|lib64)$" icon="/icons/atom/foldersOpen/lib.svg" folderColor="6CAC23" folderIconColor="A5D6A7"/>
+ <regex name="Vendors" iconType="FOLDER" priority="100" pattern="^[\._]?(vendors?|libs?|library|libraries|Pods?|stdlib)$" icon="/icons/atom/foldersOpen/lib.svg" folderColor="6CAC23" folderIconColor="A5D6A7"/>
  <regex name="Venv" iconType="FOLDER" priority="100" pattern="^[\._]?(venv|virtualenv)$" icon="/icons/atom/foldersOpen/venv.svg" folderColor="2196F3" folderIconColor="90CAF9"/>
  <regex name="Vercel" iconType="FOLDER" priority="100" pattern="^[\._]?(vercel|now)$" icon="/icons/atom/foldersOpen/vercel.svg" folderColor="546e7a" folderIconColor="cfd8dc"/>
  <regex name="Verdaccio" iconType="FOLDER" priority="100" pattern="^[\._]?verdaccio$" icon="/icons/atom/foldersOpen/verdaccio.svg" folderColor="00897b" folderIconColor="b2dfdb"/>
@@ -316,7 +305,7 @@
  <regex name="Web" iconType="FOLDER" priority="100" pattern="^[\._]?(public(_html)?|static|web|www|wwwroot|sites?)$" icon="/icons/atom/foldersOpen/web.svg" folderColor="039be5" folderIconColor="b3e5fc"/>
  <regex name="WebComponents" iconType="FOLDER" priority="100" pattern="^[\._]?web-?components$" icon="/icons/atom/foldersOpen/webcomponents.svg" folderColor="0277bd" folderIconColor="b3e5fc"/>
  <regex name="Webpack" iconType="FOLDER" priority="100" pattern="^[\._]?webpack$" icon="/icons/atom/foldersOpen/webpack.svg" folderColor="03a9f4" folderIconColor="8ed6fb"/>
- <regex name="Windows" iconType="FOLDER" priority="100" pattern="^[\._]?(win(32|64)?|windows)$" icon="/icons/atom/foldersOpen/windows.svg" folderColor="1E88E5" folderIconColor="90CAF9"/>
+ <regex name="Windows" iconType="FOLDER" priority="100" pattern="^[\._]?(win|windows)$" icon="/icons/atom/foldersOpen/windows.svg" folderColor="1E88E5" folderIconColor="90CAF9"/>
  <regex name="Wine" iconType="FOLDER" priority="100" pattern="[\.]?wine$" icon="/icons/atom/foldersOpen/wine.svg" folderColor="93254A" folderIconColor="F13C6F"/>
  <regex name="WooCommerce" iconType="FOLDER" priority="100" pattern="^[\._]?woocommerce$" icon="/icons/atom/foldersOpen/woocommerce.svg" folderColor="7f54b3" folderIconColor="d7cae8"/>
  <regex name="Woodpecker" iconType="FOLDER" priority="100" pattern="^[\._]?woodpecker$" icon="/icons/atom/foldersOpen/woodpecker.svg" folderColor="4caf50" folderIconColor="e8f5e9"/>
