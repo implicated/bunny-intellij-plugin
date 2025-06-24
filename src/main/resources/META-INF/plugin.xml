@@ -32,16 +32,17 @@
     </applicationListeners>
 
     <extensions defaultExtensionNs="com.intellij">
-        <iconProvider implementation="bunny.plugins.atom.provider.AtomIconProvider"
-                      order="first"
-                      id="AtomIconProvider"/>
-        <projectViewNodeDecorator implementation="bunny.plugins.atom.tree.HollowFoldersDecorator"/>
-
-        <openapi.vcs.changes.ui.filePathIconProvider implementation="bunny.plugins.atom.provider.AtomIconVcsProvider" />
         <postStartupActivity implementation="bunny.init.ProjectEvent"/>
+
+        <iconProvider implementation="bunny.plugins.atom.provider.AtomIconProvider" order="first" id="AtomIconProvider"/>
+        <projectViewNodeDecorator implementation="bunny.plugins.atom.tree.HollowFoldersDecorator"/>
+        <openapi.vcs.changes.ui.filePathIconProvider implementation="bunny.plugins.atom.provider.AtomIconVcsProvider"/>
+
         <themeProvider id="bunny-dark-native" path="/theme/bunny-dark-native.theme.json"/>
+
         <bundledKeymap file="vim.xml"/>
         <bundledKeymap file="datagrip.xml"/>
+
         <defaultLiveTemplates file="/liveTemplates/bunny-asciidoc.xml"/>
         <defaultLiveTemplates file="/liveTemplates/bunny-idea.xml"/>
         <defaultLiveTemplates file="/liveTemplates/bunny-java.xml"/>

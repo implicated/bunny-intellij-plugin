@@ -1,14 +1,21 @@
 <templateSet group="Bunny Java">
     <!--Java-->
-    <template name="test" value="@Test&#10;public void $method$() {&#10;    $END$&#10;}" description="test method"
+    <template name="tt" value="@Test&#10;public void $method$() {&#10;    $END$&#10;}" description="test method"
               toReformat="false" toShortenFQNames="true">
-        <variable name="method" expression="" defaultValue="one" alwaysStopAt="true"/>
+        <variable name="method" expression="" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
+<!--    <template name="loo"-->
+<!--              value="@EqualsAndHashCode(callSuper = true)&#10;@Data&#10;@AllArgsConstructor&#10;@NoArgsConstructor&#10;@Builder"-->
+<!--              description="lombok" toReformat="false" toShortenFQNames="true">-->
+<!--        <context>-->
+<!--            <option name="JAVA_CODE" value="true"/>-->
+<!--        </context>-->
+<!--    </template>-->
     <template name="loo"
-              value="@EqualsAndHashCode(callSuper = true)&#10;@Data&#10;@AllArgsConstructor&#10;@NoArgsConstructor&#10;@Builder"
+              value="@Getter&#10;@Setter&#10;@ToString(callSuper = true)"
               description="lombok" toReformat="false" toShortenFQNames="true">
         <context>
             <option name="JAVA_CODE" value="true"/>

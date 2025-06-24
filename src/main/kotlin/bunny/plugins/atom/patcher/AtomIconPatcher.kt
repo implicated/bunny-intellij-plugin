@@ -19,16 +19,6 @@ class AtomIconPatcher(
         if (!path.contains(this.remove)) {
             return null
         }
-        // arrow
-        // if (path.contains("expui/gutter")) {
-        //     return when {
-        //         path.contains("unfold.svg") -> "/icons/atom/patch/icons/mac/material/right.svg"
-        //         path.contains("foldBottom.svg") -> "/icons/atom/patch/icons/mac/material/down.svg"
-        //         path.contains("fold.svg") -> "/icons/atom/patch/icons/mac/material/up.svg"
-        //         else -> null
-        //     }
-        // }
-
         return AppCache.instance.iconPathCache.getOrPut(path) {
             tryLoadResource(path, "svg") ?: tryLoadResource(path, "png")
         }

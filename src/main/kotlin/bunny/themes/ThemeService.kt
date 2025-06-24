@@ -8,6 +8,7 @@ import com.intellij.ide.ui.laf.LafManagerImpl
 import com.intellij.openapi.components.Service
 import com.intellij.openapi.components.service
 import com.intellij.util.SVGLoader
+import javax.swing.UIManager
 
 @Service
 class ThemeService {
@@ -24,6 +25,7 @@ class ThemeService {
                 lafManager.setCurrentLookAndFeel(it, false)
             }.also {
                 SVGLoader.colorPatcherProvider = service<AtomIconSvgPatcher>()
+                UIManager.put("Tree.rowHeight", null)
                 lafManager.updateUI() // 更新 UI 以应用更改
             }
     }

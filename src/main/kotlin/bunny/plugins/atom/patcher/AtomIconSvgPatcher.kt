@@ -34,6 +34,7 @@ class AtomIconSvgPatcher : SvgElementColorPatcherProvider {
             // 应用 theme 的中 color
             patchAccentColor(attributes)
             patchThemeColor(attributes)
+
             // patchBigIconColor(attributes)
         }
     }
@@ -85,6 +86,9 @@ class AtomIconSvgPatcher : SvgElementColorPatcherProvider {
     }
 
     private fun patchBigIconColor(attributes: MutableMap<String, String>) {
+        // println("${attributes[WIDTH]} == ")
+        // attributes[WIDTH] = "16$PX"
+        // attributes[HEIGHT] = "16$PX"
         val hasWidth = attributes[WIDTH]
         if (hasWidth == "16" || hasWidth == "16px") {
             attributes[WIDTH] = "16$PX"

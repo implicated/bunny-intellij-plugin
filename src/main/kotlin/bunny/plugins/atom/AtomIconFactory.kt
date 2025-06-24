@@ -8,7 +8,7 @@ import javax.xml.parsers.DocumentBuilderFactory
 
 object AtomIconFactory {
 
-    fun regexParse(path: String, open: Boolean = false): List<AtomRegexIcon> {
+    fun regexParse(path: String): List<AtomRegexIcon> {
 
         // 创建解析器
         val factory = DocumentBuilderFactory.newInstance()
@@ -46,7 +46,6 @@ object AtomIconFactory {
                         iconType = iconType,
                         priority = priority,
                         pattern = pattern,
-                        // icon = "/icons/atom/folders${if (open) "Open" else ""}$icon",
                         icon = icon,
                         folderNames = folderNames,
                         folderColor = folderColor,

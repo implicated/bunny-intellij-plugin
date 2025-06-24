@@ -20,17 +20,18 @@ class AppEvent : AppLifecycleListener {
 
         // 使用 ApplicationManager.getApplication().invokeLater 确保在 EDT 上执行，非阻塞的
         ApplicationManager.getApplication().invokeLater {
-            Registry.get("editor.distraction.free.mode").setValue(true)
-            service<KeymapService>().setActiveKeymap()
-            service<GeneralService>().setGeneralOption()
-            service<ThemeService>().setTheme()
-            service<UIService>().setUIOption()
-            service<EditorService>().setEditorOptions()
-            service<LiveTemplateService>().removeLiveTemplate()
-
             val config = service<BunnyConfig>().state
+            // run only times
             config.firstRun.ifTrue {
+                Registry.get("editor.distraction.free.mode").setValue(true)
+                Registry.get("ide.browser.jcef.contextMenu.devTools.enabled").setValue(true)
                 service<PluginService>().disablePlugins()
+                service<KeymapService>().setActiveKeymap()
+                service<GeneralService>().setGeneralOption()
+                service<ThemeService>().setTheme()
+                service<UIService>().setUIOption()
+                service<EditorService>().setEditorOptions()
+                service<LiveTemplateService>().removeLiveTemplate()
                 config.firstRun = false
             }
         }

@@ -15,7 +15,7 @@ class OpenTerminalAction : DumbAwareAction() {
     override fun actionPerformed(event: AnActionEvent) {
         try {
             val directory = getDirectory(event)
-            ProcessBuilder(Stream.of("open", directory, "-a", "iTerm").collect(Collectors.toList()))
+            ProcessBuilder(Stream.of("open", directory, "-a", "kitty").collect(Collectors.toList()))
                 .directory(File(directory))
                 .start()
         } catch (e: IOException) {

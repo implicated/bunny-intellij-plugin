@@ -1,0 +1,6 @@
+<keymap version="1" name="asciidoc" parent="vim" disable-mnemonics="true">
+    <action id="GotoClass"/>
+    <action id="GotoFile">
+        <keyboard-shortcut first-keystroke="meta o"/>
+    </action>
+</keymap>

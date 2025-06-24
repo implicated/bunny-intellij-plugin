@@ -1,11 +1,31 @@
 <templateSet group="Bunny Kotlin">
     <!--Kotlin-->
+    <template name="tt" value="@Test&#10;fun $method$() {&#10;    $END$&#10;}&#10;&#10;" description="test method"
+              toReformat="false" toShortenFQNames="true">
+        <variable name="method" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="KOTLIN" value="true"/>
+        </context>
+    </template>
+    <template name="ttb" value="@Test&#10;fun $method$(): Unit = runBlocking {&#10;    $END$&#10;}&#10;&#10;"
+              description="test method" toReformat="false" toShortenFQNames="true">
+        <variable name="method" expression="" defaultValue="one" alwaysStopAt="true"/>
+        <context>
+            <option name="KOTLIN" value="true"/>
+        </context>
+    </template>
+    <template name="ress" value="@Resource&#10;private lateinit var $END$" description="@Resource" toReformat="false"
+              toShortenFQNames="true">
+        <context>
+            <option name="KOTLIN" value="true"/>
+        </context>
+    </template>
     <template name="logi" value="log.info(&quot;log#$METHOD$ ==&gt; $PARAM$:{{}}&quot;, $END$);" description="log info"
               toReformat="false" toShortenFQNames="true">
         <variable name="METHOD" expression="methodName()" defaultValue="" alwaysStopAt="false"/>
         <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="KOTLIN" value="true" />
+            <option name="KOTLIN" value="true"/>
         </context>
     </template>
     <template name="logp" value="thisLogger().info(&quot;zylog#$CLASS$ ==&gt; $PARAM$:{${$END$}}&quot;)&#10;"
