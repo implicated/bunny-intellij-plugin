@@ -67,6 +67,7 @@ class PluginService {
             // 必须且需要指定
             "intellij.charts",
             "intellij.grid.impl",
+            "intellij.grid.plugin",
             "intellij.grid.core.impl",
             "com.intellij",
             "com.intellij.platform.images",

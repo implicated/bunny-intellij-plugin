@@ -1,13 +1,10 @@
 package bunny.init
 
-import com.intellij.openapi.components.PersistentStateComponent
-import com.intellij.openapi.components.Service
-import com.intellij.openapi.components.State
-import com.intellij.openapi.components.Storage
+import com.intellij.openapi.components.*
 import com.intellij.util.xmlb.XmlSerializerUtil
 
 @Service
-@State(name = "bunny", storages = [Storage("bunny.xml")])
+@State(name = "bunny", storages = [Storage(value = "bunny.xml", roamingType = RoamingType.DISABLED)])
 class BunnyConfig : PersistentStateComponent<BunnyConfig.BunnyState> {
     private var state = BunnyState()
 

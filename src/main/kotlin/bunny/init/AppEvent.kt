@@ -5,10 +5,12 @@ import bunny.settings.EditorService
 import bunny.settings.GeneralService
 import bunny.settings.KeymapService
 import bunny.templates.LiveTemplateService
-import bunny.themes.*
+import bunny.themes.ThemeService
+import bunny.themes.UIService
 import com.intellij.ide.AppLifecycleListener
 import com.intellij.openapi.application.ApplicationManager
 import com.intellij.openapi.components.service
+import com.intellij.openapi.diagnostic.thisLogger
 import com.intellij.openapi.util.IconLoader
 import com.intellij.openapi.util.registry.Registry
 import icons.Icons
@@ -32,7 +34,10 @@ class AppEvent : AppLifecycleListener {
                 service<UIService>().setUIOption()
                 service<EditorService>().setEditorOptions()
                 service<LiveTemplateService>().removeLiveTemplate()
+
                 config.firstRun = false
+                // ApplicationManager.getApplication().saveSettings()
+                thisLogger().info("zylog#app ==> ${config.firstRun}")
             }
         }
     }
