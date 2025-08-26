@@ -16,7 +16,7 @@ class KeymapService {
 
         val productCode = ApplicationInfo.getInstance().build.productCode
         when (productCode) {
-            "DB" -> keymapManager.allKeymaps.find { it.name == defaultKeymap }
+            "DB" -> keymapManager.allKeymaps.find { it.name == dataGripKeymap }
             "AC" -> keymapManager.allKeymaps.find { it.name == asciiDocKeymap }
             else -> keymapManager.allKeymaps.find { it.name == defaultKeymap }
         }?.let { keymap ->

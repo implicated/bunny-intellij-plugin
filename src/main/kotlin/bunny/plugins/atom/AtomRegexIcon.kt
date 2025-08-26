@@ -45,7 +45,8 @@ data class AtomRegexIcon(
         val virtualFile = PsiUtilCore.getVirtualFile(element)
         virtualFile?.let {
             return match(virtualFile)
-        } ?: return false
+        }
+        return false
     }
 
     fun matchesName(assocName: String): Boolean = name == assocName
@@ -56,7 +57,7 @@ data class AtomRegexIcon(
             SvgPatcher.FOLDER_COLOR -> folderColor
             SvgPatcher.FOLDER_ICON_COLOR -> folderIconColor
             else -> "808080"
-        };
+        }
     }
 }
 

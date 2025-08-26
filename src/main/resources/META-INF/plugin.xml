@@ -6,14 +6,19 @@
 
     <depends>com.intellij.modules.platform</depends>
     <depends>Git4Idea</depends>
+
+    <depends>AceJump</depends>
     <depends>IdeaVIM</depends>
     <depends>IdeaVimExtension</depends>
     <depends>com.joshestein.ideavim-quickscope</depends>
     <depends>org.jetbrains.IdeaVim-EasyMotion</depends>
-    <depends>AceJump</depends>
-    <depends>org.asciidoctor.intellij.asciidoc</depends>
-    <depends>PlantUML integration</depends>
-    <depends>String Manipulation</depends>
+    <depends>eu.theblob42.idea.whichkey</depends>
+    <depends>com.julienphalip.ideavim.peekaboo</depends>
+    <depends>com.julienphalip.ideavim.switch</depends>
+
+    <depends optional="true">String Manipulation</depends>
+    <depends optional="true">org.asciidoctor.intellij.asciidoc</depends>
+    <depends optional="true">PlantUML integration</depends>
 
     <!--marketplace-->
 <!--    <depends optional="true" config-file="bunny-proto.xml">io.kanro.idea.plugin.protobuf</depends>-->
@@ -60,8 +65,8 @@
         </action>
         <action id="MybatisLogTrans"
                 class="bunny.plugins.mybatis.MybatisLogTransAction"
-                text="mybatis日志解析"
-                description="mybatis日志解析"
+                text="MyBatis Log Convert"
+                description="MyBatis log convert"
                 icon="Icons.mybatis_icon">
             <add-to-group group-id="ConsoleEditorPopupMenu" anchor="first"/>
             <keyboard-shortcut keymap="$default" first-keystroke="alt A"/>

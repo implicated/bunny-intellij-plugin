@@ -5,9 +5,6 @@ import com.intellij.openapi.components.Service
 import com.intellij.openapi.diagnostic.thisLogger
 import com.intellij.openapi.updateSettings.impl.UpdateSettings
 // import com.intellij.util.net.HttpConfigurable
-import com.intellij.util.net.ProxyConfiguration
-import com.intellij.util.net.ProxySettings
-import com.jetbrains.rd.swing.proxyProperty
 
 
 @Service
@@ -16,9 +13,9 @@ class GeneralService {
     fun setGeneralOption() {
         thisLogger().info("zylog#app ==> ${this.javaClass.name}")
         // system settings
-        val generalService = GeneralSettings.getInstance()
-        generalService.isConfirmExit = false
-        generalService.confirmOpenNewProject = GeneralSettings.Companion.OPEN_PROJECT_NEW_WINDOW
+        val generalSettings = GeneralSettings.getInstance()
+        generalSettings.isConfirmExit = false
+        generalSettings.confirmOpenNewProject = GeneralSettings.Companion.OPEN_PROJECT_NEW_WINDOW
 
         // HTTP Proxy
         // val httpConfigurable = HttpConfigurable.getInstance()
