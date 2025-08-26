@@ -5,7 +5,6 @@
     <vendor>implicated</vendor>
 
     <depends>com.intellij.modules.platform</depends>
-    <depends>Git4Idea</depends>
 
     <depends>AceJump</depends>
     <depends>IdeaVIM</depends>

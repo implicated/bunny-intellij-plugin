@@ -6,18 +6,14 @@ import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.actionSystem.CommonDataKeys
 import com.intellij.openapi.project.DumbAwareAction
 import com.intellij.openapi.vfs.VirtualFile
-import java.io.File
 import java.io.IOException
-import java.util.stream.Collectors
-import java.util.stream.Stream
 
 class OpenTerminalAction : DumbAwareAction() {
     override fun actionPerformed(event: AnActionEvent) {
         try {
             val directory = getDirectory(event)
-            ProcessBuilder(Stream.of("open", directory, "-a", "kitty").collect(Collectors.toList()))
-                .directory(File(directory))
-                .start()
+            ProcessBuilder(listOf("wezterm", "cli", "spawn", "--cwd", directory)).start()
+            ProcessBuilder(listOf("open", "-a", "WezTerm")).start()
         } catch (e: IOException) {
             throw RuntimeException("Failed to execute the command!", e)
         }

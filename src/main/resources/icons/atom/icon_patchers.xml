@@ -5,7 +5,7 @@
   <iconPatcher name="AI" remove="icons" append="/icons/atom/patch/icons/plugins/ai"/>
   <iconPatcher name="Aqua" remove="icons" append="/icons/atom/patch/icons/plugins/aqua"/>
   <iconPatcher name="AllIcons" remove="" append="/icons/atom/patch/icons"/>
-  <iconPatcher name="Checkboxes" remove="com/intellij/ide/ui/laf/icons" append="/icons/atom/patch/icons/mt/checkboxes"/>
+<!--  <iconPatcher name="Checkboxes" remove="com/intellij/ide/ui/laf/icons" append="/icons/atom/patch/icons/mt/checkboxes"/>-->
   <iconPatcher name="Ant" remove="icons" append="/icons/atom/patch/icons/plugins/ant"/>
   <iconPatcher name="AppCode" remove="icons" append="/icons/atom/patch/icons/plugins/appcode"/>
   <iconPatcher name="BuildTools" remove="icons/buildTools" append="/icons/atom/patch/icons/buildTools"/>
