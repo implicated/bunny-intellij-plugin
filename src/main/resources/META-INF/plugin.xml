@@ -24,6 +24,8 @@
     <!--bundled-->
     <depends>org.jetbrains.kotlin</depends>
     <depends>com.intellij.properties</depends>
+    <depends>idea.plugin.protoeditor</depends>
+    <depends>com.intellij.database</depends>
 
     <applicationListeners>
         <listener class="bunny.init.AppEvent" topic="com.intellij.ide.AppLifecycleListener"/>
