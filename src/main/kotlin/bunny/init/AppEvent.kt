@@ -14,7 +14,6 @@ import com.intellij.openapi.diagnostic.thisLogger
 import com.intellij.openapi.util.IconLoader
 import com.intellij.openapi.util.registry.Registry
 import icons.Icons
-import org.jetbrains.kotlin.utils.addToStdlib.ifTrue
 
 class AppEvent : AppLifecycleListener {
     override fun appFrameCreated(commandLineArgs: MutableList<String>) {
@@ -24,7 +23,7 @@ class AppEvent : AppLifecycleListener {
         ApplicationManager.getApplication().invokeLater {
             val config = service<BunnyConfig>().state
             // run only times
-            config.firstRun.ifTrue {
+            if (config.firstRun) {
                 Registry.get("editor.distraction.free.mode").setValue(true)
                 Registry.get("ide.browser.jcef.contextMenu.devTools.enabled").setValue(true)
                 service<PluginService>().disablePlugins()

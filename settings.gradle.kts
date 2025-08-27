@@ -1,1 +1,1 @@
-rootProject.name = "bunny-intellij-plugin"
+rootProject.name = "bunny-datagrip-plugin"

@@ -12,21 +12,9 @@ class ProjectEvent : ProjectActivity {
     override suspend fun execute(project: Project) {
 
         PluginManagerCore.loadedPlugins.forEach { plugin ->
-            // @formatter:off
             when (plugin.pluginId.idString) {
-
-                // IC
-                KotlinCodeStyleService.PLUGIN_ID -> project.service<KotlinCodeStyleService>().commentStyle(project)
-                JavaCodeStyleService.PLUGIN_ID -> project.service<JavaCodeStyleService>().commentStyle(project)
-                PropertiesCodeStyleService.PLUGIN_ID -> project.service<PropertiesCodeStyleService>().customStyle(project)
-
-                // IU
-                ProtobufCodeStyleService.PLUGIN_ID -> project.service<ProtobufCodeStyleService>().commonStyle(project)
                 SqlCodeStyleService.PLUGIN_ID -> project.service<SqlCodeStyleService>().customStyle(project)
-
-                // marketplace
             }
-            // @formatter:on
         }
 
         project.service<VcsService>().setCommitChecks(project)

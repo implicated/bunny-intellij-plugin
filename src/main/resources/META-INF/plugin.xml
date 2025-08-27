@@ -1,7 +1,7 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin require-restart="true">
     <id>cc.implicated.intellij.plugins.bunny</id>
-    <name>bunny</name>
+    <name>Bunny-Datagrip</name>
     <vendor>implicated</vendor>
 
     <depends>com.intellij.modules.platform</depends>
@@ -22,9 +22,6 @@
     <!--marketplace-->
 
     <!--bundled-->
-    <depends>org.jetbrains.kotlin</depends>
-    <depends>com.intellij.properties</depends>
-    <depends>idea.plugin.protoeditor</depends>
     <depends>com.intellij.database</depends>
 
     <applicationListeners>
@@ -43,7 +40,6 @@
         <themeProvider id="bunny-dark-native" path="/theme/bunny-dark-native.theme.json"/>
 
         <bundledKeymap file="vim.xml"/>
-        <bundledKeymap file="datagrip.xml"/>
 
         <defaultLiveTemplates file="/liveTemplates/bunny-asciidoc.xml"/>
         <defaultLiveTemplates file="/liveTemplates/bunny-idea.xml"/>
@@ -59,14 +55,6 @@
                 text="Open in External Terminal"
                 description="Open current file location in external terminal"
                 icon="Icons.terminal_icon">
-        </action>
-        <action id="MybatisLogTrans"
-                class="bunny.plugins.mybatis.MybatisLogTransAction"
-                text="MyBatis Log Convert"
-                description="MyBatis log convert"
-                icon="Icons.mybatis_icon">
-            <add-to-group group-id="ConsoleEditorPopupMenu" anchor="first"/>
-            <keyboard-shortcut keymap="$default" first-keystroke="alt A"/>
         </action>
     </actions>
 </idea-plugin>

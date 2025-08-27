@@ -69,26 +69,24 @@
 
 
     <!--Tool Windows-->
-    <action id="ActivateProjectToolWindow">
+    <!--Files-->
+    <action id="ActivateBookmarksToolWindow">
         <keyboard-shortcut first-keystroke="meta 1"/>
     </action>
     <action id="ActivateVersionControlToolWindow">
         <keyboard-shortcut first-keystroke="meta 2"/>
     </action>
-    <action id="ActivateMavenToolWindow">
-        <keyboard-shortcut first-keystroke="meta 4"/>
-    </action>
-    <action id="ActivateGradleToolWindow">
-        <keyboard-shortcut first-keystroke="meta 4"/>
-    </action>
-    <action id="ActivateWebInspectorToolWindow">
+    <!--Database Explorer-->
+    <action id="ActivateProjectToolWindow">
         <keyboard-shortcut first-keystroke="meta 4"/>
     </action>
     <action id="ActivateTODOToolWindow">
         <keyboard-shortcut first-keystroke="meta 9"/>
     </action>
-    <action id="ActivateBookmarksToolWindow"/>
-    <action id="ActivateDatabaseToolWindow"/>
+    <action id="DatabaseView.SqlGenerator">
+        <keyboard-shortcut first-keystroke="meta s"/>
+    </action>
+    <action id="ActivateFindToolWindow"/>
     <action id="ActivateRunToolWindow"/>
     <action id="ActivateDebugToolWindow"/>
 
