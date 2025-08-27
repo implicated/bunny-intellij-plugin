@@ -6,24 +6,23 @@
 
     <depends>com.intellij.modules.platform</depends>
 
-    <depends>AceJump</depends>
-    <depends>IdeaVIM</depends>
-    <depends>IdeaVimExtension</depends>
-    <depends>com.joshestein.ideavim-quickscope</depends>
-    <depends>org.jetbrains.IdeaVim-EasyMotion</depends>
-    <depends>eu.theblob42.idea.whichkey</depends>
-    <depends>com.julienphalip.ideavim.peekaboo</depends>
-    <depends>com.julienphalip.ideavim.switch</depends>
+<!--    <depends>AceJump</depends>-->
+<!--    <depends>IdeaVIM</depends>-->
+<!--    <depends>IdeaVimExtension</depends>-->
+<!--    <depends>com.joshestein.ideavim-quickscope</depends>-->
+<!--    <depends>org.jetbrains.IdeaVim-EasyMotion</depends>-->
+<!--    <depends>eu.theblob42.idea.whichkey</depends>-->
+<!--    <depends>com.julienphalip.ideavim.peekaboo</depends>-->
+<!--    <depends>com.julienphalip.ideavim.switch</depends>-->
 
-    <depends optional="true">String Manipulation</depends>
-    <depends optional="true">org.asciidoctor.intellij.asciidoc</depends>
-    <depends optional="true">PlantUML integration</depends>
+<!--    <depends>String Manipulation</depends>-->
+<!--    <depends>org.asciidoctor.intellij.asciidoc</depends>-->
+<!--    <depends>PlantUML integration</depends>-->
 
     <!--marketplace-->
 <!--    <depends optional="true" config-file="bunny-proto.xml">io.kanro.idea.plugin.protobuf</depends>-->
 
     <!--bundled-->
-    <depends>Git4Idea</depends>
     <depends optional="true" config-file="bunny-kotlin.xml">org.jetbrains.kotlin</depends>
     <depends optional="true" config-file="bunny-properties.xml">com.intellij.properties</depends>
     <depends optional="true" config-file="bunny-proto.xml">idea.plugin.protoeditor</depends>
