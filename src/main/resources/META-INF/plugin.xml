@@ -20,13 +20,10 @@
 <!--    <depends>PlantUML integration</depends>-->
 
     <!--marketplace-->
-<!--    <depends optional="true" config-file="bunny-proto.xml">io.kanro.idea.plugin.protobuf</depends>-->
 
     <!--bundled-->
-    <depends optional="true" config-file="bunny-kotlin.xml">org.jetbrains.kotlin</depends>
-    <depends optional="true" config-file="bunny-properties.xml">com.intellij.properties</depends>
-    <depends optional="true" config-file="bunny-proto.xml">idea.plugin.protoeditor</depends>
-    <depends optional="true" config-file="bunny-database.xml">com.intellij.database</depends>
+    <depends>org.jetbrains.kotlin</depends>
+    <depends>com.intellij.properties</depends>
 
     <applicationListeners>
         <listener class="bunny.init.AppEvent" topic="com.intellij.ide.AppLifecycleListener"/>

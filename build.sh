@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 ./gradlew clean
 ./gradlew buildPlugin
 rm -rf "$HOME/.config/idea/bunny-intellij-plugin-*.zip"

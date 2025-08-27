@@ -15,14 +15,10 @@ class ProjectEvent : ProjectActivity {
             // @formatter:off
             when (plugin.pluginId.idString) {
 
-                // IC
+                // bundled
                 KotlinCodeStyleService.PLUGIN_ID -> project.service<KotlinCodeStyleService>().commentStyle(project)
                 JavaCodeStyleService.PLUGIN_ID -> project.service<JavaCodeStyleService>().commentStyle(project)
                 PropertiesCodeStyleService.PLUGIN_ID -> project.service<PropertiesCodeStyleService>().customStyle(project)
-                ProtobufCodeStyleService.PLUGIN_ID -> project.service<ProtobufCodeStyleService>().commonStyle(project)
-
-                // IU
-                SqlCodeStyleService.PLUGIN_ID -> project.service<SqlCodeStyleService>().customStyle(project)
 
                 // marketplace
             }
