@@ -22,6 +22,7 @@
     <!--marketplace-->
 
     <!--bundled-->
+    <depends>Git4Idea</depends>
 
     <applicationListeners>
         <listener class="bunny.init.AppEvent" topic="com.intellij.ide.AppLifecycleListener"/>
