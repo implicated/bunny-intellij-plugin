@@ -22,8 +22,6 @@
     <!--marketplace-->
 
     <!--bundled-->
-    <depends>org.jetbrains.kotlin</depends>
-    <depends>com.intellij.properties</depends>
 
     <applicationListeners>
         <listener class="bunny.init.AppEvent" topic="com.intellij.ide.AppLifecycleListener"/>
@@ -41,7 +39,6 @@
         <themeProvider id="bunny-dark-native" path="/theme/bunny-dark-native.theme.json"/>
 
         <bundledKeymap file="vim.xml"/>
-        <bundledKeymap file="datagrip.xml"/>
 
         <defaultLiveTemplates file="/liveTemplates/bunny-asciidoc.xml"/>
         <defaultLiveTemplates file="/liveTemplates/bunny-idea.xml"/>
@@ -57,14 +54,6 @@
                 text="Open in External Terminal"
                 description="Open current file location in external terminal"
                 icon="Icons.terminal_icon">
-        </action>
-        <action id="MybatisLogTrans"
-                class="bunny.plugins.mybatis.MybatisLogTransAction"
-                text="MyBatis Log Convert"
-                description="MyBatis log convert"
-                icon="Icons.mybatis_icon">
-            <add-to-group group-id="ConsoleEditorPopupMenu" anchor="first"/>
-            <keyboard-shortcut keymap="$default" first-keystroke="alt A"/>
         </action>
     </actions>
 </idea-plugin>

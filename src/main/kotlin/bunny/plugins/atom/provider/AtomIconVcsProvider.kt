@@ -12,8 +12,7 @@ class AtomIconVcsProvider : FilePathIconProvider {
     /**
      *
      */
-    override fun getIcon(filePath: FilePath, isDirectory: Boolean, project: Project?): Icon? {
-        if (isDirectory) return null
+    override fun getIcon(filePath: FilePath, project: Project?): Icon? {
         val regex = filePath.virtualFile?.let { virtualFile ->
             Icons.files
                 .filter { it.match(virtualFile) }

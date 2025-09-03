@@ -23,9 +23,6 @@ object Icons {
     val terminal_icon = getIcon("/icons/terminal.svg")
 
     @JvmField
-    val mybatis_icon = getIcon("/icons/mybatis.svg")
-
-    @JvmField
     val files = AtomIconFactory.regexParse("/icons/atom/icon_associations.xml")
 
     @JvmField
