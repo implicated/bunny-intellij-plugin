@@ -33,7 +33,12 @@
                   topic="com.intellij.openapi.fileEditor.FileEditorManagerListener"/>
     </applicationListeners>
 
+    <extensions defaultExtensionNs="org.jetbrains.kotlin">
+        <supportsKotlinPluginMode supportsK1="true" supportsK2="true" />
+    </extensions>
+
     <extensions defaultExtensionNs="com.intellij">
+
         <postStartupActivity implementation="bunny.init.ProjectEvent"/>
 
         <iconProvider implementation="bunny.plugins.atom.provider.AtomIconProvider" order="first" id="AtomIconProvider"/>
