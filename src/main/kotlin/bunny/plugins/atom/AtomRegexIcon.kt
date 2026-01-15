@@ -1,6 +1,5 @@
 package bunny.plugins.atom
 
-import bunny.plugins.atom.patcher.AtomIconSvgPatcher.SvgPatcher
 import com.intellij.openapi.diagnostic.thisLogger
 import com.intellij.openapi.vfs.VirtualFile
 import com.intellij.psi.PsiElement
@@ -51,13 +50,5 @@ data class AtomRegexIcon(
 
     fun matchesName(assocName: String): Boolean = name == assocName
 
-    fun matchColor(key: String): String? {
-        return when (key) {
-            SvgPatcher.ICON_COLOR -> iconColor
-            SvgPatcher.FOLDER_COLOR -> folderColor
-            SvgPatcher.FOLDER_ICON_COLOR -> folderIconColor
-            else -> "808080"
-        }
-    }
 }
 

@@ -102,7 +102,13 @@ class AtomIconSvgPatcher : SvgElementColorPatcherProvider {
         icons.filter { it.matchesName(attr) }
             .maxByOrNull { it.priority }
             ?.let {
-                val color = it.matchColor(key)
+                val color = when (key) {
+                    ICON_COLOR -> it.iconColor
+                    FOLDER_COLOR -> it.folderColor
+                    FOLDER_ICON_COLOR -> it.folderIconColor
+                    else -> "808080"
+                }
+
                 attributes[FILL] = "#$color"
                 if (attributes[STROKE] != null && attributes[STROKE] != "") {
                     attributes[STROKE] = "#$color"

@@ -29,8 +29,8 @@
 
     <applicationListeners>
         <listener class="bunny.init.AppEvent" topic="com.intellij.ide.AppLifecycleListener"/>
-        <listener class="bunny.plugins.atom.tree.RefreshTreeListener"
-                  topic="com.intellij.openapi.fileEditor.FileEditorManagerListener"/>
+<!--        <listener class="bunny.plugins.atom.tree.RefreshTreeListener"-->
+<!--                  topic="com.intellij.openapi.fileEditor.FileEditorManagerListener"/>-->
     </applicationListeners>
 
     <extensions defaultExtensionNs="org.jetbrains.kotlin">
@@ -42,10 +42,11 @@
         <postStartupActivity implementation="bunny.init.ProjectEvent"/>
 
         <iconProvider implementation="bunny.plugins.atom.provider.AtomIconProvider" order="first" id="AtomIconProvider"/>
-        <projectViewNodeDecorator implementation="bunny.plugins.atom.tree.HollowFoldersDecorator"/>
+<!--        <projectViewNodeDecorator implementation="bunny.plugins.atom.tree.HollowFoldersDecorator"/>-->
         <openapi.vcs.changes.ui.filePathIconProvider implementation="bunny.plugins.atom.provider.AtomIconVcsProvider"/>
 
-        <themeProvider id="bunny-dark-native" path="/theme/bunny-dark-native.theme.json"/>
+        <themeProvider id="bunny-dark-native" path="/themes/bunny-dark-native.theme.json"/>
+        <themeProvider id="bunny-light-native" path="/themes/bunny-light-native.theme.json"/>
 
         <bundledKeymap file="vim.xml"/>
         <bundledKeymap file="datagrip.xml"/>

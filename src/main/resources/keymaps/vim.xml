@@ -102,6 +102,9 @@
         <keyboard-shortcut first-keystroke="control D"/>
         <keyboard-shortcut first-keystroke="DELETE"/>
     </action>
+    <action id="FindUsages">
+        <keyboard-shortcut first-keystroke="meta enter" />
+    </action>
     <action id="Generate"/>
     <action id="InsertLiveTemplate"/>
     <action id="SaveAll"/>
